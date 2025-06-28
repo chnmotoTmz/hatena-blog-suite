@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "hatena-unified": {
+      "command": "node",
+      "args": ["C:/Users/motoc/hatena-blog-suite/mcp/unified-server.js"],
+      "env": {
+        "HATENA_BLOG_ID": "your_hatena_id",
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
