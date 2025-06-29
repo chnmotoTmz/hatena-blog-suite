@@ -1,0 +1,53 @@
+# Core Utilities
+python-dotenv>=0.19.0
+requests>=2.25.0
+aiohttp>=3.8.0 # For async link checking
+
+# Content Processing
+beautifulsoup4>=4.9.0
+# MeCab Python wrapper (mecab-python3). Requires MeCab library and dictionary to be installed system-wide.
+# For example, on Ubuntu: sudo apt-get install mecab libmecab-dev mecab-ipadic-utf8
+# Then, pip install mecab-python3
+# mecab-python3>=1.0.0
+
+# Content Enhancement
+Pillow>=8.0.0         # For image processing (PIL fork)
+# bingart: For Bing Image Creator. May need specific version or direct install from a repository.
+# Check the bingart library's own installation instructions.
+# e.g., pip install bingart (if on PyPI and compatible)
+# Consider adding a specific version if known, or a git URL if necessary.
+bingart>=0.5.5 # Assuming a version, adjust as needed based on actual library state
+
+# NLP / AI
+scikit-learn>=0.24.0  # For TF-IDF, cosine similarity
+numpy>=1.19.0         # Often a dependency of scikit-learn, langchain, etc.
+langchain>=0.1.0      # Core Langchain library
+openai>=1.0.0         # For OpenAI embeddings (used by default in vector_store)
+chromadb>=0.4.0       # ChromaDB client for vector store
+tiktoken>=0.4.0       # Tokenizer for OpenAI models
+
+# Knowledge Graph
+networkx>=2.5
+matplotlib>=3.3.0     # For graph visualization
+
+# Note on MeCab:
+# If you intend to use MeCab for keyword extraction (in content_processing.keyword_extractor),
+# you must install MeCab library and an appropriate dictionary (e.g., mecab-ipadic-neologd)
+# on your system first. Then, install the Python binding:
+# pip install mecab-python3
+
+# Note on bingart:
+# The bingart library's availability and installation method can change.
+# Please refer to its official source or repository for the most up-to-date
+# installation instructions if the pip install command above does not work.
+# For example, you might need to install it from a specific git repository:
+# pip install git+https://github.com/acheong08/BingImageCreator@master # Example, check actual repo
+# Or a specific fork/version if the main one has issues.
+# The version specified (>=0.5.5) is an example; verify compatibility.
+
+# For development & testing (optional, can be in a separate requirements-dev.txt)
+# pytest
+# mypy
+# flake8
+# black
+# isort
