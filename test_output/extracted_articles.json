@@ -1,0 +1,162 @@
+[
+  {
+    "title": "terms_and_policy",
+    "url": "https://help.hatenablog.com/entry/external/terms_and_policy",
+    "content": "このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\nこのツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\n利用規約\n本ツールは、\nはてな利用規約\nが適用されますが、本機能に限定して適用される規約について以下に記載します。\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください\nプライバシーポリシー\n本ツールは、\nはてなプライバシーポリシー\nが適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。\n本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む\nGoogle API サービスのユーザーデータに関するポリシー\nに準拠し、取り扱います\n本ツールは、Google Analytics Admin API (\nhttps://developers.google.com/analytics/devguides/config/admin/v1/rest\n) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します\n機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます\n本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません",
+    "html_content": "<div class=\"entry-content hatenablog-entry\">\n<p>このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。</p><hr/><p></p>\n<div class=\"section\">\n<h3 id=\"はてなブログ用GA4カスタムディメンションセットアップツールβ\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</h3>\n<p>このツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。<br/>\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。</p><p><a href=\"https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</a></p><p></p><h4 id=\"ga4-custom-dimension-rule\">利用規約</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/rule\">はてな利用規約</a>が適用されますが、本機能に限定して適用される規約について以下に記載します。<p></p>\n<ul>\n<li>本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください</li>\n</ul><p><br/>\n</p><h4 id=\"ga4-custom-dimension-privacypolicy\">プライバシーポリシー</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/privacypolicy-ja\">はてなプライバシーポリシー</a>が適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。<p></p>\n<ul>\n<li>本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む <a href=\"https://developers.google.com/terms/api-services-user-data-policy?hl=ja\">Google API サービスのユーザーデータに関するポリシー</a>に準拠し、取り扱います</li>\n<li>本ツールは、Google Analytics Admin API (<a href=\"https://developers.google.com/analytics/devguides/config/admin/v1/rest\">https://developers.google.com/analytics/devguides/config/admin/v1/rest</a>) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します</li>\n<li>機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます</li>\n<li>本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません</li>\n</ul>\n</div>\n</div>",
+    "images": [],
+    "links": [
+      {
+        "url": "https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec",
+        "text": "はてなブログ用GA4カスタムディメンションセットアップツール(β)"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/rule",
+        "text": "はてな利用規約"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/privacypolicy-ja",
+        "text": "はてなプライバシーポリシー"
+      },
+      {
+        "url": "https://developers.google.com/terms/api-services-user-data-policy?hl=ja",
+        "text": "Google API サービスのユーザーデータに関するポリシー"
+      },
+      {
+        "url": "https://developers.google.com/analytics/devguides/config/admin/v1/rest",
+        "text": "https://developers.google.com/analytics/devguides/config/admin/v1/rest"
+      }
+    ],
+    "word_count": 31,
+    "date": "2025-06-29T04:24:57.866098",
+    "categories": []
+  },
+  {
+    "title": "terms_and_policy",
+    "url": "https://help.hatenablog.com/entry/external/terms_and_policy",
+    "content": "このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\nこのツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\n利用規約\n本ツールは、\nはてな利用規約\nが適用されますが、本機能に限定して適用される規約について以下に記載します。\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください\nプライバシーポリシー\n本ツールは、\nはてなプライバシーポリシー\nが適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。\n本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む\nGoogle API サービスのユーザーデータに関するポリシー\nに準拠し、取り扱います\n本ツールは、Google Analytics Admin API (\nhttps://developers.google.com/analytics/devguides/config/admin/v1/rest\n) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します\n機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます\n本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません",
+    "html_content": "<div class=\"entry-content hatenablog-entry\">\n<p>このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。</p><hr/><p></p>\n<div class=\"section\">\n<h3 id=\"はてなブログ用GA4カスタムディメンションセットアップツールβ\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</h3>\n<p>このツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。<br/>\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。</p><p><a href=\"https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</a></p><p></p><h4 id=\"ga4-custom-dimension-rule\">利用規約</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/rule\">はてな利用規約</a>が適用されますが、本機能に限定して適用される規約について以下に記載します。<p></p>\n<ul>\n<li>本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください</li>\n</ul><p><br/>\n</p><h4 id=\"ga4-custom-dimension-privacypolicy\">プライバシーポリシー</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/privacypolicy-ja\">はてなプライバシーポリシー</a>が適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。<p></p>\n<ul>\n<li>本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む <a href=\"https://developers.google.com/terms/api-services-user-data-policy?hl=ja\">Google API サービスのユーザーデータに関するポリシー</a>に準拠し、取り扱います</li>\n<li>本ツールは、Google Analytics Admin API (<a href=\"https://developers.google.com/analytics/devguides/config/admin/v1/rest\">https://developers.google.com/analytics/devguides/config/admin/v1/rest</a>) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します</li>\n<li>機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます</li>\n<li>本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません</li>\n</ul>\n</div>\n</div>",
+    "images": [],
+    "links": [
+      {
+        "url": "https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec",
+        "text": "はてなブログ用GA4カスタムディメンションセットアップツール(β)"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/rule",
+        "text": "はてな利用規約"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/privacypolicy-ja",
+        "text": "はてなプライバシーポリシー"
+      },
+      {
+        "url": "https://developers.google.com/terms/api-services-user-data-policy?hl=ja",
+        "text": "Google API サービスのユーザーデータに関するポリシー"
+      },
+      {
+        "url": "https://developers.google.com/analytics/devguides/config/admin/v1/rest",
+        "text": "https://developers.google.com/analytics/devguides/config/admin/v1/rest"
+      }
+    ],
+    "word_count": 31,
+    "date": "2025-06-29T04:24:57.958219",
+    "categories": []
+  },
+  {
+    "title": "terms_and_policy",
+    "url": "https://help.hatenablog.com/entry/external/terms_and_policy",
+    "content": "このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\nこのツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\n利用規約\n本ツールは、\nはてな利用規約\nが適用されますが、本機能に限定して適用される規約について以下に記載します。\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください\nプライバシーポリシー\n本ツールは、\nはてなプライバシーポリシー\nが適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。\n本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む\nGoogle API サービスのユーザーデータに関するポリシー\nに準拠し、取り扱います\n本ツールは、Google Analytics Admin API (\nhttps://developers.google.com/analytics/devguides/config/admin/v1/rest\n) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します\n機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます\n本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません",
+    "html_content": "<div class=\"entry-content hatenablog-entry\">\n<p>このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。</p><hr/><p></p>\n<div class=\"section\">\n<h3 id=\"はてなブログ用GA4カスタムディメンションセットアップツールβ\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</h3>\n<p>このツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。<br/>\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。</p><p><a href=\"https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</a></p><p></p><h4 id=\"ga4-custom-dimension-rule\">利用規約</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/rule\">はてな利用規約</a>が適用されますが、本機能に限定して適用される規約について以下に記載します。<p></p>\n<ul>\n<li>本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください</li>\n</ul><p><br/>\n</p><h4 id=\"ga4-custom-dimension-privacypolicy\">プライバシーポリシー</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/privacypolicy-ja\">はてなプライバシーポリシー</a>が適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。<p></p>\n<ul>\n<li>本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む <a href=\"https://developers.google.com/terms/api-services-user-data-policy?hl=ja\">Google API サービスのユーザーデータに関するポリシー</a>に準拠し、取り扱います</li>\n<li>本ツールは、Google Analytics Admin API (<a href=\"https://developers.google.com/analytics/devguides/config/admin/v1/rest\">https://developers.google.com/analytics/devguides/config/admin/v1/rest</a>) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します</li>\n<li>機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます</li>\n<li>本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません</li>\n</ul>\n</div>\n</div>",
+    "images": [],
+    "links": [
+      {
+        "url": "https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec",
+        "text": "はてなブログ用GA4カスタムディメンションセットアップツール(β)"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/rule",
+        "text": "はてな利用規約"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/privacypolicy-ja",
+        "text": "はてなプライバシーポリシー"
+      },
+      {
+        "url": "https://developers.google.com/terms/api-services-user-data-policy?hl=ja",
+        "text": "Google API サービスのユーザーデータに関するポリシー"
+      },
+      {
+        "url": "https://developers.google.com/analytics/devguides/config/admin/v1/rest",
+        "text": "https://developers.google.com/analytics/devguides/config/admin/v1/rest"
+      }
+    ],
+    "word_count": 31,
+    "date": "2025-06-29T04:24:58.046644",
+    "categories": []
+  },
+  {
+    "title": "terms_and_policy",
+    "url": "https://help.hatenablog.com/entry/external/terms_and_policy",
+    "content": "このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\nこのツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\n利用規約\n本ツールは、\nはてな利用規約\nが適用されますが、本機能に限定して適用される規約について以下に記載します。\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください\nプライバシーポリシー\n本ツールは、\nはてなプライバシーポリシー\nが適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。\n本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む\nGoogle API サービスのユーザーデータに関するポリシー\nに準拠し、取り扱います\n本ツールは、Google Analytics Admin API (\nhttps://developers.google.com/analytics/devguides/config/admin/v1/rest\n) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します\n機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます\n本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません",
+    "html_content": "<div class=\"entry-content hatenablog-entry\">\n<p>このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。</p><hr/><p></p>\n<div class=\"section\">\n<h3 id=\"はてなブログ用GA4カスタムディメンションセットアップツールβ\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</h3>\n<p>このツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。<br/>\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。</p><p><a href=\"https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</a></p><p></p><h4 id=\"ga4-custom-dimension-rule\">利用規約</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/rule\">はてな利用規約</a>が適用されますが、本機能に限定して適用される規約について以下に記載します。<p></p>\n<ul>\n<li>本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください</li>\n</ul><p><br/>\n</p><h4 id=\"ga4-custom-dimension-privacypolicy\">プライバシーポリシー</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/privacypolicy-ja\">はてなプライバシーポリシー</a>が適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。<p></p>\n<ul>\n<li>本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む <a href=\"https://developers.google.com/terms/api-services-user-data-policy?hl=ja\">Google API サービスのユーザーデータに関するポリシー</a>に準拠し、取り扱います</li>\n<li>本ツールは、Google Analytics Admin API (<a href=\"https://developers.google.com/analytics/devguides/config/admin/v1/rest\">https://developers.google.com/analytics/devguides/config/admin/v1/rest</a>) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します</li>\n<li>機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます</li>\n<li>本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません</li>\n</ul>\n</div>\n</div>",
+    "images": [],
+    "links": [
+      {
+        "url": "https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec",
+        "text": "はてなブログ用GA4カスタムディメンションセットアップツール(β)"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/rule",
+        "text": "はてな利用規約"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/privacypolicy-ja",
+        "text": "はてなプライバシーポリシー"
+      },
+      {
+        "url": "https://developers.google.com/terms/api-services-user-data-policy?hl=ja",
+        "text": "Google API サービスのユーザーデータに関するポリシー"
+      },
+      {
+        "url": "https://developers.google.com/analytics/devguides/config/admin/v1/rest",
+        "text": "https://developers.google.com/analytics/devguides/config/admin/v1/rest"
+      }
+    ],
+    "word_count": 31,
+    "date": "2025-06-29T04:24:58.135328",
+    "categories": []
+  },
+  {
+    "title": "terms_and_policy",
+    "url": "https://help.hatenablog.com/entry/external/terms_and_policy",
+    "content": "このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\nこのツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。\nはてなブログ用GA4カスタムディメンションセットアップツール(β)\n利用規約\n本ツールは、\nはてな利用規約\nが適用されますが、本機能に限定して適用される規約について以下に記載します。\n本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください\nプライバシーポリシー\n本ツールは、\nはてなプライバシーポリシー\nが適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。\n本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む\nGoogle API サービスのユーザーデータに関するポリシー\nに準拠し、取り扱います\n本ツールは、Google Analytics Admin API (\nhttps://developers.google.com/analytics/devguides/config/admin/v1/rest\n) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します\n機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます\n本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません",
+    "html_content": "<div class=\"entry-content hatenablog-entry\">\n<p>このページでは、外部サービスと連携し機能を提供するツールや機能に関し、特別に規約やポリシーの明記が必要なものについて記載します。</p><hr/><p></p>\n<div class=\"section\">\n<h3 id=\"はてなブログ用GA4カスタムディメンションセットアップツールβ\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</h3>\n<p>このツールは、株式会社はてなにより提供され、はてなブログの「Google アナリティクス 4 埋め込み」機能を利用しているユーザー向けの機能です。<br/>\nこのツールを利用すると、ご利用の Google アナリティクス 4 のプロパティに、はてなブログが提供するカスタムディメンションの設定を簡単に追加することができます。カスタムディメンションの設定を行うことで、Google アナリティクス 4 での解析機能を最大限利用することができるようになります。</p><p><a href=\"https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec\">はてなブログ用GA4カスタムディメンションセットアップツール(β)</a></p><p></p><h4 id=\"ga4-custom-dimension-rule\">利用規約</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/rule\">はてな利用規約</a>が適用されますが、本機能に限定して適用される規約について以下に記載します。<p></p>\n<ul>\n<li>本ツールはベータ版です。突然動作しなくなったり、正常に動作しない可能性、予告なくサービス提供を終了する場合があります。ご了承の上ご利用ください</li>\n</ul><p><br/>\n</p><h4 id=\"ga4-custom-dimension-privacypolicy\">プライバシーポリシー</h4>本ツールは、<a href=\"https://policies.hatena.ne.jp/privacypolicy-ja\">はてなプライバシーポリシー</a>が適用されますが、本ツールに限定して適用されるポリシーについて以下に記載します。<p></p>\n<ul>\n<li>本ツールの使用および Google API から受け取った情報の他のアプリへの転送は、限定使用要件を含む <a href=\"https://developers.google.com/terms/api-services-user-data-policy?hl=ja\">Google API サービスのユーザーデータに関するポリシー</a>に準拠し、取り扱います</li>\n<li>本ツールは、Google Analytics Admin API (<a href=\"https://developers.google.com/analytics/devguides/config/admin/v1/rest\">https://developers.google.com/analytics/devguides/config/admin/v1/rest</a>) を利用し、ユーザーが権限を保有しているアナリティクスのプロパティに特定のカスタムディメンションを登録する機能を提供します</li>\n<li>機能の提供に係り、アナリティクスアカウントのリスト及びプロパティリストの読み取り、カスタムディメンションの読み取り及び書き込みが必要なため、アナリティクスの読み取り権限と書き込み権限を求めます</li>\n<li>本ツールで取得したアナリティクスのデータについては、機能提供のために一時的に使用し、保存しません</li>\n</ul>\n</div>\n</div>",
+    "images": [],
+    "links": [
+      {
+        "url": "https://script.google.com/a/macros/hatena.ne.jp/s/AKfycbwPbI3dJUf9qXlh3OmOdqfqYlAUZ5iTy4J6JrrEpkExN7ABqiJVZIyYPo4zN_R1eS9l/exec",
+        "text": "はてなブログ用GA4カスタムディメンションセットアップツール(β)"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/rule",
+        "text": "はてな利用規約"
+      },
+      {
+        "url": "https://policies.hatena.ne.jp/privacypolicy-ja",
+        "text": "はてなプライバシーポリシー"
+      },
+      {
+        "url": "https://developers.google.com/terms/api-services-user-data-policy?hl=ja",
+        "text": "Google API サービスのユーザーデータに関するポリシー"
+      },
+      {
+        "url": "https://developers.google.com/analytics/devguides/config/admin/v1/rest",
+        "text": "https://developers.google.com/analytics/devguides/config/admin/v1/rest"
+      }
+    ],
+    "word_count": 31,
+    "date": "2025-06-29T04:24:58.231576",
+    "categories": []
+  }
+]

@@ -65,7 +65,7 @@ class HatenaUnified:
                 content = article['content']
                 for domain, tag in [('amazon.', 'amazon-tag'), ('rakuten.', 'rakuten-tag')]:
                     if domain in content:
-                        content = re.sub(f'(https?://[^\s]*{domain}[^\s]*)', 
+                        content = re.sub(rf'(https?://[^\s]*{domain}[^\s]*)', 
                                         f'\\1?tag={options.get(tag, "")}', content)
                 article['enhanced_content'] = content
             
@@ -78,7 +78,7 @@ class HatenaUnified:
                 keywords = article['title'].split()[:3]
                 related = [a for a in articles if a != article and 
                           any(kw.lower() in a['title'].lower() for kw in keywords)][:3]
-                article['related_articles'] = [{'title': r['title'], 'url': r['url']} for r in related]
+                article['related_articles'] = [{'title': r['title'], 'url': r.get('url', '#')} for r in related]
         
         self._save_json(articles, 'enhanced_articles.json')
         return articles
@@ -124,7 +124,7 @@ class HatenaUnified:
         
         plan = [{
             'week': i + 1,
-            'article': {'title': a['title'], 'url': a['url']},
+            'article': {'title': a['title'], 'url': a.get('url', '#')},
             'update_type': ['content_refresh', 'link_update', 'seo_optimize'][i % 3],
             'priority': 'high' if a['score'] > 100 else 'medium'
         } for i, a in enumerate(top_articles)]

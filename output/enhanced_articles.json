@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Test Article",
+    "content": "This is a test article about programming and development",
+    "word_count": 10,
+    "categories": [
+      "Tech",
+      "Programming"
+    ],
+    "links": [
+      {
+        "url": "https://example.com",
+        "text": "Example"
+      }
+    ],
+    "images": [],
+    "related_articles": [
+      {
+        "title": "Another Test",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "title": "Another Test",
+    "content": "Another article about web development and JavaScript",
+    "word_count": 8,
+    "categories": [
+      "Web",
+      "JavaScript"
+    ],
+    "links": [],
+    "images": [],
+    "related_articles": [
+      {
+        "title": "Test Article",
+        "url": "#"
+      }
+    ]
+  }
+]

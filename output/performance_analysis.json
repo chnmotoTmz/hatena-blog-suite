@@ -1,0 +1,29 @@
+{
+  "total_articles": 2,
+  "total_words": 18,
+  "avg_words": 9.0,
+  "top_categories": [
+    [
+      "Tech",
+      1
+    ],
+    [
+      "JavaScript",
+      1
+    ],
+    [
+      "Web",
+      1
+    ],
+    [
+      "Programming",
+      1
+    ]
+  ],
+  "external_links": 1,
+  "seo_score": 35.9,
+  "recommendations": [
+    "記事の文字数を増やしましょう（推奨: 500文字以上）",
+    "外部リンクを追加してSEOを改善しましょう"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "week": 1,
+    "article": {
+      "title": "Test Article",
+      "url": "#"
+    },
+    "update_type": "content_refresh",
+    "priority": "medium"
+  },
+  {
+    "week": 2,
+    "article": {
+      "title": "Another Test",
+      "url": "#"
+    },
+    "update_type": "link_update",
+    "priority": "medium"
+  }
+]
