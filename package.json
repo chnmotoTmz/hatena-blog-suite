@@ -6,10 +6,14 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^0.5.0",
     "axios": "^1.6.0",
-    "cheerio": "^1.0.0-rc.12"
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.6.1"
   },
   "scripts": {
     "start": "node mcp/unified-server.js",
+    "hatena-server": "node -r dotenv/config mcp/hatena-mcp-server.js",
+    "hatena-dev": "node -r dotenv/config mcp/hatena-mcp-server.js dotenv_config_path=.env",
+    "test-env": "node -r dotenv/config -e \"console.log('HATENA_ID:', process.env.HATENA_ID); console.log('HATENA_BLOG_ID:', process.env.HATENA_BLOG_ID); console.log('HATENA_API_KEY:', process.env.HATENA_API_KEY ? 'SET' : 'NOT SET')\"",
     "test": "node -e \"console.log('All tests passed - unified approach')\""
   }
 }
