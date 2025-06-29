@@ -1,0 +1,8 @@
+# Claude Code Configuration
+WORK_DIR=/home/moto/hatena-agent-v2
+EDIT_PERMISSIONS=true
+AUTO_SAVE=true
+
+# プロジェクト特定設定
+PROJECT_NAME=hatena-agent-v2
+PYTHON_PATH=/usr/bin/python3

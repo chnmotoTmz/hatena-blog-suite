@@ -1,0 +1,12 @@
+# Hatena Multi-Blog System - Windows Deployment Requirements
+# Minimal dependencies for new multi-blog functionality
+
+# Core HTTP and API communication
+requests>=2.31.0
+
+# Environment variables management
+python-dotenv>=1.0.0
+
+# Optional: Enhanced features (uncomment if needed)
+# beautifulsoup4>=4.12.2  # For HTML parsing if web scraping needed
+# lxml>=5.1.0            # For advanced XML processing

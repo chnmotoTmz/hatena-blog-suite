@@ -1,0 +1,14 @@
+{
+  "mcp.servers": {
+    "hatena-rag": {
+      "command": "node",
+      "args": ["/home/moto/hatena-agent-v2/hatena-rag-mcp/dist/index.js"],
+      "env": {
+        "OPENAI_API_KEY": "your_openai_api_key_here",
+        "DATABASE_PATH": "./data/articles.db",
+        "DEFAULT_BLOG_ID": "your_hatena_id",
+        "DEFAULT_BLOG_DOMAIN": "your_hatena_id.hatenablog.com"
+      }
+    }
+  }
+}

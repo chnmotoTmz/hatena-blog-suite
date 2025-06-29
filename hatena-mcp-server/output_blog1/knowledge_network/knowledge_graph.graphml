@@ -1,0 +1,1519 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d7" for="edge" attr.name="relationship_type" attr.type="string"/>
+<key id="d6" for="edge" attr.name="weight" attr.type="float"/>
+<key id="d5" for="node" attr.name="content" attr.type="string"/>
+<key id="d4" for="node" attr.name="word_count" attr.type="string"/>
+<key id="d3" for="node" attr.name="categories" attr.type="string"/>
+<key id="d2" for="node" attr.name="date" attr.type="string"/>
+<key id="d1" for="node" attr.name="url" attr.type="string"/>
+<key id="d0" for="node" attr.name="title" attr.type="string"/>
+<graph edgedefault="undirected"><node id="article_0">
+  <data key="d0">いつも帰りによる横浜のパン屋です。高速バスの乗り場のビルの1...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750760338</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">47</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: 横浜で見つけた！価格が変動する謎めいたパン屋さんと、未来からのレシート？
+
+本文:
+&lt;p&gt;
+    横浜の高速バス乗り場近くにある、個人的には立ち寄り必須のパン屋さんをご存知でしょうか？&lt;br/&gt;
+    正確なビル名はうっかり忘れがちなのですが、高速バス乗り場のビル1階にあるんです。私にとって、そこは単なるパン屋さん以上の存在。なぜなら、まるで&lt;strong&gt;為替相場のようにパンの値段が上下する&lt;/strong&gt;、ちょっと不思議な体験ができるからなんです！
+&lt;/p&gt;
+&lt;h2 id="雨の日は200円日によって変わるパンの価格"&gt;雨の日は200円？日によって変わるパンの価格&lt;/h2&gt;
+&lt;p&gt;
+    そう、このお店のパン、日によって価格が変わるんです。例えば、雨の日だと普段より安くなって200円まで下がることも。晴れた日中だと300円くらいだったりするのですが、私がいつもお世話になるのはだいたい220円の時が多いですね。店内の陳列棚を見ると、リーズナブルな価格帯のパンが豊富に並んでいるのが分かります。&lt;br/&gt;
+&lt;img alt="パンの陳列棚" src="画像2のURLをここに挿入"/&gt;
+    （残念ながら、人気のパンは閉店間際には売り切れてしまうことが多いようです！）
+&lt;/p&gt;
+&lt;h2 id="正直な感想給食のパンみたいでもそれがいいんです"&gt;正直な感想：給食のパンみたい？でも、それがいいんです&lt;/h2&gt;
+&lt;p&gt;
+    「そんなに美味しいの？」と聞かれたら、正直に言ってしまうと、飛び上がるほど美味しいわけではないんです（笑）。でも、決してまずくもありません。例えるなら、どこか懐かしい、まるで学生時代の給食を思い出すような素朴な味わい。それがこのパンの魅力なんです。
+&lt;/p&gt;
+&lt;p&gt;
+    私のお気に入りの利用法は、購入したらすぐに冷凍庫へ直行させること。そして、翌日の朝ごはんやお腹が空いた時に、サッと取り出して食べています。この手軽さが、忙しい日常には本当にありがたいんですよね。
+&lt;/p&gt;
+&lt;h2 id="物価高の救世主庶民の味方123クラブハウス-横浜店"&gt;物価高の救世主？庶民の味方『123クラブハウス 横浜店』&lt;/h2&gt;
+&lt;p&gt;
+    物価高が続くご時世、お財布に優しいこのパンは、まさに私たち庶民の強い味方。毎日のちょっとした贅沢…いや、むしろ必需品かもしれませんね。
+    &lt;br/&gt;
+    このお店の名前は、レシートによると&lt;strong&gt;「123クラブハウス 横浜店」&lt;/strong&gt;というようです。店内は落ち着いた木目調のテーブルや、V字のヘリンボーン柄のフローリングが特徴的。水色や黄色、焦げ茶色など、色とりどりの木製椅子が並んでいて、とても居心地の良い空間が広がっています。
+    &lt;img alt="店内の様子" src="画像1のURLをここに挿入"/&gt;
+&lt;/p&gt;
+&lt;p&gt;
+    そして、このお店のパンの袋には、ユニークなメッセージがたくさん書かれているのも面白いポイントです。例えば、「YASUKUTE UMAI（安くてうまい）」や「CHOI UMA（ちょいウマ）」といった直球のメッセージから、「SOREDETTE IJINYANA（それって異人やな）」なんて、思わずクスッと笑ってしまうようなフレーズまで。&lt;br/&gt;
+    これはまさに、&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%88%E3%82%A2%E3%81%AE%E3%83%91%E3%83%B3"&gt;コンビニエンスストアのパン&lt;/a&gt;やプライベートブランドの商品が持つ、コストパフォーマンスとユニークさを兼ね備えた魅力に通じるものがあるのではないでしょうか。
+    &lt;img alt="パンの袋のメッセージ" src="画像1のURLをここに挿入"/&gt;
+&lt;/p&gt;
+&lt;h2 id="まさかの未来からのレシート"&gt;まさかの未来からのレシート！？&lt;/h2&gt;
+&lt;p&gt;
+    ある日、このパン屋さんで手にしたレシートを見て、私は思わず二度見してしまいました。
+    &lt;br/&gt;
+&lt;img alt="レシートのクローズアップ" src="画像3のURLをここに挿入"/&gt;
+    なんと、レシートに印字されていた日付は&lt;strong&gt;「2025-06-24」&lt;/strong&gt;！ まるで未来からタイムリープしてきたかのような日付に、一瞬戸惑いを隠せませんでした（笑）。これはレジシステムのテストだったのでしょうか、それとも未来から来た私の手違い…？ 色々な想像が膨らみますね。
+&lt;/p&gt;
+&lt;p&gt;
+    店内には複数の大きなデジタルサイネージも設置されており、「スマホで注文 待たずに受け取り」といった表示もありました。もしかすると、未来にはもっとスマートなパンの購入体験が待っているのかもしれませんね。
+    &lt;a href="https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%82%B5%E3%82%A4%E3%83%8D%E3%83%BC%E3%82%B8"&gt;デジタルサイネージ&lt;/a&gt;は、お店の情報を効果的に伝える便利なツールですね。
+&lt;/p&gt;
+&lt;p&gt;
+    リーズナブルで、ちょっとユニーク、そして時には未来からのメッセージを運んでくれるかもしれない『123クラブハウス 横浜店』。&lt;br/&gt;
+    横浜の高速バスを利用される際は、ぜひ立ち寄ってみてはいかがでしょうか？ きっと、あなたもこのパン屋さんの魅力にハマってしまうはずですよ！
+    &lt;br/&gt;
+&lt;a href="https://ja.wikipedia.org/wiki/%E3%83%91%E3%83%B3%E5%B1%8B"&gt;日本のパン屋文化&lt;/a&gt;も奥深いものですね。
+&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/e3kxp6a.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像2" src="https://i.imgur.com/Ive3eEd.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像3" src="https://i.imgur.com/x4ycbhh.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_1">
+  <data key="d0">すごい記事を見つけましたせいせい愛が普及してテレビ番組も エ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750722832</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">28</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+&lt;p&gt;&lt;strong&gt;タイトル:&lt;/strong&gt; 生成AIとエンタメ革命：エキストラが消える日？未来のテレビと私たちの視点&lt;/p&gt;
+&lt;p&gt;
+  皆さん、こんにちは！&lt;br/&gt;
+  先日、友人から届いたメッセージに思わず吹き出してしまいました。曰く、「すごい記事を見つけたよ、&lt;strong&gt;せいせい愛&lt;/strong&gt;が普及してテレビ番組もエキストラなしだって！」…いやいや、それは「&lt;strong&gt;生成AI&lt;/strong&gt;」のことだよね！とツッコミを入れつつ、彼が添付してくれた新聞記事を読んで、その内容に驚愕しました。
+&lt;/p&gt;
+&lt;h2 id=""&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  その新聞記事の大きな見出しには「&lt;strong&gt;動画生成AIが進化&lt;/strong&gt;」とあり、特に目を引いたのは「&lt;strong&gt;『エキストラなし』制作も&lt;/strong&gt;」という一文でした。あのOpenAIが開発した「Sora」のような最新の動画生成AIの進化によって、本当にエキストラを使わない映像制作が現実のものになるというのです。
+&lt;/p&gt;
+&lt;p&gt;
+  ハリウッド映画などでは、これまでも大規模なエキストラシーンがありましたが、その裏には多くの新人俳優やタレントが「現場の雰囲気を知る」ための重要なステップとしてエキストラ経験を積んできました。しかし、これからはAIがその役割を担うことになるのでしょうか？記事では、AIで現代によみがえったとされる和装の人物（もしかしたら、あの&lt;a href="https://ja.wikipedia.org/wiki/%E5%96%9C%E5%A4%9A%E5%B7%9D%E6%AD%8C%E9%BA%BF"&gt;喜多川歌麿&lt;/a&gt;…？）の写真も掲載されており、AIが単なる代替だけでなく、創造的な役割まで担う可能性を示唆しています。&lt;br/&gt;
+  実際に、記事の下部には&lt;a href="https://fixer.co.jp/"&gt;FIXER株式会社&lt;/a&gt;が「生成AIを活用した制作協力」により本格ドラマに着手しているというニュースもあり、この波が目の前に迫っていることを感じさせられます。
+&lt;/p&gt;
+&lt;h2 id="-1"&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  友人は言います。「そうなると、役者とかもどんどん生成AIに変わっていくのかな？」と。確かに、その可能性はゼロではありません。芸能人のギャラはそれなりに高額で、制作側にとっては大きなコスト負担です。しかし、AIタレントならどうでしょう？「ある意味、ただ」で使えると彼は指摘します。AIが面白いトークをしたり、演技をこなしたりできるなら、テレビ局はほとんどお金をかけずに番組が作れてしまうかもしれません。これは、制作側からすれば、まさに「救世主」とも言えるでしょう。
+&lt;/p&gt;
+&lt;h2 id="-2"&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  しかし、この話には大きな落とし穴があります。それは「視聴者の反応」です。友人のメッセージにもありましたが、「視聴者がAIが出てるタレントに対して、ここは手を抜いているだとか、AIが所詮やってるんでしょ、とか言って価値を見出さなくなったらそれも終わり」なのです。
+&lt;/p&gt;
+&lt;p&gt;
+  人間が演じるからこそ生まれる感情の機微、予測不能なハプニング、そして共感。これらがテレビ番組や映画の大きな魅力であることは間違いありません。もし視聴者がAIによるコンテンツに「AIだから」という先入観で価値を見出せなくなってしまったら、どんなに低コストで質の高いコンテンツが作れたとしても、誰も見なくなり、視聴率は意味をなさなくなってしまうでしょう。
+&lt;/p&gt;
+&lt;p&gt;
+  もしかしたら、そのうち「AIが視聴率をAIがテレビ見てる時代」なんて、SFのような未来が来るのかもしれません。
+&lt;/p&gt;
+&lt;h2 id="-3"&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+  今回の新聞記事からは、エンターテイメント業界だけでなく、「肝臓手術回復に影響」や「ガラス基板を100万倍速く加工」といった見出しがあるように、AIが医療や製造業など、あらゆる分野に浸透し、大きな変革をもたらしていることが読み取れます。
+&lt;/p&gt;
+&lt;p&gt;
+  生成AIの進化は止まりません。制作側にとってはコスト削減の大きなメリットがある一方で、視聴者側がコンテンツに何を求めるのか、その「価値」の定義が問われる時代になりそうです。私たちはこの新たな波に、どのように向き合っていけば良いのでしょうか。皆さんはどう思われますか？
+&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/hYj8A8k.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_2">
+  <data key="d0">これって 真珠湾攻撃 みたいですね（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750722203</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">28</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: &lt;p&gt;現代の「奇襲」に見る、よみがえる歴史の影――私たちはどこへ向かうのか？&lt;/p&gt;
+
+本文:
+&lt;p&gt;現代の軍事作戦の報道を目にする時、思わず「これって、まるで&lt;a href="https://ja.wikipedia.org/wiki/%E7%9C%9F%E7%8F%A0%E6%B9%BE%E6%94%BB%E6%92%83"&gt;真珠湾攻撃&lt;/a&gt;みたいですね」と声が漏れてしまうことがあるかもしれません。&lt;/p&gt;
+&lt;p&gt;まるで何十年も前に、あの&lt;a href="https://ja.wikipedia.org/wiki/%E9%9B%B6%E5%BC%8F%E8%89%A6%E4%B8%8A%E6%88%A6%E9%97%98%E6%A9%9F"&gt;零戦&lt;/a&gt;がハワイへと飛んでいく姿を思い出させるような、そんな既視感を覚えることもあるでしょう。&lt;/p&gt;
+&lt;p&gt;今回、ある新聞記事に目を通すと、まさにその既視感が強く心をよぎりました。そこには「&lt;strong&gt;米奇襲『フェイク』幾重にも&lt;/strong&gt;」という見出しが大きく踊り、その下に「おとり爆撃機」や「数カ月前からイラン攻撃準備」といった言葉が並んでいます。いかに現代の軍事作戦が、単なる攻撃にとどまらず、巧妙な情報戦や欺瞞戦術を含んでいるかが示されています。&lt;/p&gt;
+&lt;p&gt;紙面の中央には、その作戦の主役ともいえる&lt;a href="https://ja.wikipedia.org/wiki/B-2_(%E7%88%86%E6%92%83%E6%A9%9F)"&gt;B-2 スピリット ステルス爆撃機&lt;/a&gt;のモノクロ写真が掲載されています。その独特の形状は、まさに未来の兵器を思わせる一方で、背後には護衛機らしき影も見えます。そして、その下には米国本土のミズーリ州からイランの&lt;a href="https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%BF%E3%83%B3%E3%82%BA%E6%A0%B8%E6%96%BD%E8%A8%AD"&gt;ナタンズ核施設&lt;/a&gt;や&lt;a href="https://ja.wikipedia.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%89%E3%82%A5"&gt;フォードゥ核施設&lt;/a&gt;まで、実に1万kmを超える飛行経路が点線で示された地図があります。これは、遠隔地への精密かつ周到な攻撃が、どれほど綿密に計画されたかを示唆しています。&lt;/p&gt;
+&lt;p&gt;しかし、私たちはこうも思うのです。「攻撃っていうのはある意味、奇襲じゃないとだめだとは思うけど、かといって、こういうのを見ると、正々堂々としていない部分もありますよね」と。確かに戦略上、奇襲は有効かもしれませんが、そこに「フェイク」や「おとり」といった言葉が並ぶ時、私たちは複雑な感情を抱かずにはいられません。&lt;/p&gt;
+&lt;p&gt;そして、歴史を振り返れば、こうした「奇襲」がきっかけとなり、大きな戦争へと進んでいった過去があります。第二次世界大戦がまさにそうでした。当時の日本国内は、新聞もすべてが戦争「一色」となり、国民全体がその波に飲み込まれていきました。&lt;/p&gt;
+&lt;p&gt;私たちは今、本当に戦争が起こりゆく前の時代を見通しているのでしょうか？ 先行きが見えない不安は、多くの人が感じていることかもしれません。新聞のモノクロの紙面から伝わる緊迫した雰囲気は、まるで歴史の扉が再び開かれようとしているかのような厳粛さを私たちに問いかけます。歴史は繰り返すと言いますが、現代の「奇襲」と「欺瞞」の様相は、私たちに何を問いかけているのでしょうか。私たちはこの状況から、何を学び、どう未来を築いていくべきなのでしょうか。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/CSl0zuT.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_3">
+  <data key="d0">こういう時は 為替でもして変動を取りに行きたいですよね（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750721385</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">33</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: &lt;h2 id="AIとFIREそして為替の魅力偶然見つけた投資本の問いかけ"&gt;AIとFIRE、そして為替の魅力：偶然見つけた投資本の問いかけ&lt;/h2&gt;
+
+本文:
+&lt;p&gt;「こういう時は為替でもして変動を取りに行きたいですよね」――ふと、そんな気持ちになることがあります。世界情勢が目まぐるしく変わる中で、自分の資産を守り、そして増やしていくことへの関心は尽きません。&lt;/p&gt;
+&lt;p&gt;でも、今の私はちょっと立ち止まっています。というのも、&lt;strong&gt;「とりあえずAIを学習するまで一切のトレードは現在中止しています」&lt;/strong&gt;から。AIが今後の投資にどう影響してくるのか、まだその手法が明確になっていない中で、安易な動きは避けたい。今は何よりも「預金が大事」という堅実な考えが頭の中にあります。&lt;/p&gt;
+&lt;p&gt;そんな日々の中で、偶然目にしたのが一枚の新聞広告でした。上部には社会情勢に関する硬質なニュースが載っている一方で、中央から下部には、個人の資産形成と経済的自由を追求する、鮮やかな金融広告が大きく掲載されていたのです。&lt;/p&gt;
+&lt;p&gt;その広告のキャッチコピーは非常に目を引くものでした。&lt;strong&gt;「最短で“経済的・時間的自由”を手にするための実践書」&lt;/strong&gt;と謳われ、その中心には&lt;br/&gt;
+&lt;strong&gt;「黄金の スキャルピング FX」&lt;/strong&gt;&lt;br/&gt;
+という力強いタイトルが輝いています。さらに、「元手30万円からわずか3年でFIREを叶える爆益トレード」という文言に目が釘付けになりました。近年注目されている&lt;a href="https://ja.wikipedia.org/wiki/FIRE%E3%83%A0%E3%83%BC%E3%83%96%E3%83%A1%E3%83%B3%E3%83%88"&gt;FIRE（Financial Independence, Retire Early：経済的自立と早期リタイア）ムーブメント&lt;/a&gt;を意識したこの言葉は、多くの現代人の心を掴むのではないでしょうか。&lt;/p&gt;
+&lt;p&gt;特に私が注目したのは、「チャートに張り付く必要なし！？超多忙でも稼げるトレード術とは？」という問いかけと、「FXで保険会社を辞めた著者が指南！」という著者の経歴です。AIの進化が目覚ましい昨今ですが、人間が実際にその手法で成功し、人生を変えたという実体験は、何よりも説得力があります。AIに頼るだけでなく、昔ながらの手法や人間の経験値にも目を向ける必要がありそうです。&lt;/p&gt;
+&lt;p&gt;本書のポイントとして挙げられている内容も非常に具体的で魅力的でした。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;チャートや図解が盛りだくさんで買い時・売り時がひと目でわかる！&lt;/li&gt;
+&lt;li&gt;勝てるノウハウ・資金管理ルール・メンタル強化までを完全網羅&lt;/li&gt;
+&lt;li&gt;ドル円１分足スキャルピングに専念し、経験値を人より早く高める&lt;/li&gt;
+&lt;li&gt;月20回のトレードで月利12%、3年で年収1000万円を実現できる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;「FXで稼ぐことを諦めた人が最後に読むべき一冊」という煽り文句も、Amazonランキング第1位という実績が後押ししているとなると、無視できません。KADOKAWAからの出版という点も、その信頼性を裏付けています。&lt;/p&gt;
+&lt;p&gt;「預金は大事」という私の現在のスタンスは変わりません。ですが、この広告を目にして、経済的な自由への探求心はますます強くなりました。AIの力を借りるか、それともこの「黄金の スキャルピング FX」のように人間の英知が詰まった手法を学ぶか。情報収集は欠かせませんね。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/fGxxoH0.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_4">
+  <data key="d0">久々に買った日経新聞
+これからトランプとイスラエル イラクの...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750720562</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">67</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: 新聞から見えた未来とAIの波――情報過多時代の賢い情報源とは？
+
+本文:
+&lt;p&gt;先日、本当に久しぶりに日本経済新聞を買ってみました。&lt;/p&gt;
+&lt;p&gt;最近、国際情勢、特にトランプ氏の動向やイスラエル・イラクに関するニュースが話題に上ることが多いですよね。でも、ネットで情報を追っていると、どうしても断片的だったり、信憑性に疑問を感じたりすることが少なくありません。そんな時、ふと手にした新聞は、やはり情報の正確さや網羅性において一日の長があるな、と改めて感じました。&lt;/p&gt;
+&lt;p&gt;思い出すのは、亡くなった父の言葉です。父は生前、&lt;strong&gt;「日経新聞は大事だ」&lt;/strong&gt;と常々言っていました。毎日隅々まで読むわけではなくても、たまに世の中の動きを知るという意味で、新聞は良いものだと、今回の購読を通じて再認識しました。&lt;/p&gt;
+&lt;h2 id="未来の新聞が語る今"&gt;未来の新聞が語る「今」&lt;/h2&gt;
+&lt;p&gt;さて、今回広げてみた日経新聞の紙面。驚いたことに、そこには&lt;strong&gt;「2025年6月24日 火曜日」&lt;/strong&gt;という、未来の日付が記されていました。これは、ある意味で未来をシミュレートした、架空の新聞と言えるかもしれません。それでも、そこに掲載されている記事内容は、現在の私たちが抱える国際情勢や社会問題の延長線上にあるものばかりで、非常に示唆に富んでいました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;トップ記事には&lt;stong&gt;「米危うい『限定介入』 イランの核放棄見えず」&lt;/stong&gt;という見出しが躍り、核問題を巡る国際的な緊張をリアルに伝えています。関連情報として、&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%A9%E3%83%B3%E6%A0%B8%E5%90%88%E6%84%8F"&gt;イラン核合意&lt;/a&gt;を巡る動きは、今後も目が離せません。&lt;/li&gt;
+&lt;li&gt;国内では&lt;stong&gt;「沖縄に初シェルター 与那国町に27年度末 政府、有事に備え」&lt;/stong&gt;といった、日本の安全保障環境の変化に対応する具体的な動きも報じられていました。&lt;a href="https://ja.wikipedia.org/wiki/%E4%B8%8E%E9%82%A3%E5%9B%BD%E5%B3%B6"&gt;与那国島&lt;/a&gt;という地政学的に重要な場所での動きは、私たちの未来を考える上で見過ごせません。&lt;/li&gt;
+&lt;li&gt;経済面では&lt;stong&gt;「コメ5キロ3000円台に」&lt;/stong&gt;といった物価上昇の現実も描かれており、未来の暮らしをリアルに想像させられました。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;紙面全体がモノクロ印刷で情報が密に詰まっている様子は、堅実な経済紙としての役割を強く感じさせます。記事内容だけでなく、紙媒体ならではの情報密度も、デジタルとは異なる読書体験を提供してくれます。&lt;/p&gt;
+&lt;h2 id="新聞の広告欄が映し出すトレンド"&gt;新聞の広告欄が映し出す「トレンド」&lt;/h2&gt;
+&lt;p&gt;そして、新聞を読んでいて特に目を引いたのが、トップページにも掲載されている&lt;strong&gt;「広告欄」&lt;/strong&gt;です。新聞の広告欄、特に日経新聞のような主要紙の広告枠は、莫大な費用がかかるはずです。そこに掲載されているということは、出版社や企業が&lt;strong&gt;「これは！」&lt;/strong&gt;と力を入れている情報に違いありません。&lt;/p&gt;
+&lt;p&gt;私が今回発見したのは、&lt;stong&gt;「最速生成AI仕事術」&lt;/stong&gt;という書籍の大きな広告でした。そこには&lt;stong&gt;「タスクをAIに丸投げして実務を自動化するスキル37」&lt;/stong&gt;、&lt;stong&gt;「1時間の作業が30秒で終わり、生産性100倍が実現できる！」&lt;/stong&gt;といった、思わず惹きつけられるキャッチフレーズが並んでいました。&lt;/p&gt;
+&lt;p&gt;近年、書店に行けば&lt;a href="https://ja.wikipedia.org/wiki/ChatGPT"&gt;生成AI&lt;/a&gt;関連の本が文字通り「乱立」していて、どれを選べば良いのか迷ってしまうほどです。しかし、新聞の、それも日経新聞の広告欄にこれほど大きく取り上げられているとなると、これはまさに「今、最も注目すべき一冊」である可能性が高いと感じました。出版社の&lt;a href="https://kanki-pub.co.jp/"&gt;かんき出版&lt;/a&gt;も、こうした時流に合わせた本を出すのが得意な印象です。&lt;/p&gt;
+&lt;p&gt;さらに、広告の上部には&lt;a href="https://www.dmgmori.co.jp/"&gt;DMG森精機株式会社&lt;/a&gt;のような世界的な工作機械メーカーの広告もあり、製造業の最前線でもAI技術の重要性が高まっていることを改めて感じさせられました。未来の新聞にも&lt;stong&gt;「ローソンAI店舗 KDDIと協業」&lt;/stong&gt;や&lt;stong&gt;「実戦型AI化仕事術」&lt;/stong&gt;といった広告が見られたことからも、AIが社会やビジネスに深く浸透している様子がうかがえます。&lt;/p&gt;
+&lt;p&gt;このように、新聞の広告欄を見るだけでも、世の中の「今」と「これから」を象徴する情報が詰まっているのですね。さすがに日経新聞の広告欄は個人が気軽に広告を出せるような場所ではありませんから、その情報の選別眼には信頼がおけます。&lt;/p&gt;
+&lt;h2 id="情報の信憑性とこれからの情報収集"&gt;情報の信憑性と、これからの情報収集&lt;/h2&gt;
+&lt;p&gt;考えてみれば、現代は情報の信憑性を見極める力が、賢いユーザーに求められる時代になってきたと言えます。玉石混交のネット情報の中で、何を信じ、何を選ぶのか。それは決して容易なことではありません。&lt;/p&gt;
+&lt;p&gt;一方で、新聞の売上が年々下がり、取材体制の維持が難しくなるという話も耳にします。もしかしたら、新聞という媒体自体がその役割を終える時代が来るのかもしれません。そもそも、今新聞を読んでいる層は、やはり高齢者の方が多いのでしょうか？&lt;/p&gt;
+&lt;p&gt;それでも、今回の体験を通じて、古い情報伝達の手段である新聞が持つ価値と、新しい技術である&lt;stong&gt;生成AI&lt;/stong&gt;がもたらす変化、その両方を知ることの大切さを痛感しました。結局、世の中は過去の延長線上にあり、過去があるからこそ現代があるのです。&lt;/p&gt;
+&lt;p&gt;「古いことを知る」ことと同時に「新しいことを知る」こと。古い手段を上手に活用しつつ、新しい手段にも積極的に目を向けること。そのバランスこそが、この情報過多の時代を賢く生き抜く鍵となるのではないでしょうか。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/jcmfOXb.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像2" src="https://i.imgur.com/I2LvmDj.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_5">
+  <data key="d0">AI フォロワー という話</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750715789</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">15</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: &lt;p&gt;「AIフォロワー」という名の「サクラ」？ 発信のモチベーションと現代社会のリアル&lt;/p&gt;
+
+本文:
+&lt;p&gt;最近、SNSで発信する機会が増え、ブログにつぶやきを投稿するのも手軽になりました。ところが、誰もが一度はぶつかる壁がありますよね。それは、&lt;strong&gt;「反応がない」&lt;/strong&gt;という壁です。どんなに熱心に投稿しても、誰からもリアクションがなければ、人はなかなか集まりませんし、何より発信を続けるモチベーションが維持できません。これは、まさに「物の摂理」と言えるでしょう。&lt;/p&gt;
+&lt;p&gt;そこで私が考えたのは、ある意味で大胆なアイデアでした。それは、&lt;strong&gt;「AIにリアクションをさせる」&lt;/strong&gt;ということです。これを聞いて、「それって…桜じゃない？」と思われた方もいるでしょう。はい、その通りです。正直に言えば、完全に「サクラ」ですよね。&lt;/p&gt;
+&lt;p&gt;しかし、ここで少し立ち止まって考えてみてください。「サクラ」という存在は、実は昔から商売の世界には当たり前のように存在していました。例えば、イベントでの賑やかしや、お店の行列作りなど、人を動かすための伝統的な手法として使われてきた歴史があります。&lt;/p&gt;
+&lt;p&gt;そう考えると、AIの登場は、この「サクラ」という概念を新たな次元へと引き上げたとも言えます。AIが出てこようと出てこまいと、人を動かす、あるいは「人を騙す」と言うと語弊がありますが、人を誘導するという意味での「サクラ」は、これからも人間を相手に商売をする限り、永遠に形を変えて存在し続けるでしょう。&lt;/p&gt;
+&lt;p&gt;だからこそ怖いのが、AIが勝手にニュースを作り、それに呼応するのもまたAIであるという「フェイクニュース」の存在です。完全に人間がそれが人間によって行われているのか、AIによって行われているのか判別できなくなる可能性を秘めています。&lt;/p&gt;
+&lt;p&gt;とりあえず、私自身は、このAIサクラを「自己満足」のために作ろうとしています。なぜなら、どんなに発信しても反応がなければ面白くないですし、やる気が続かないからです。「サクラはサクラ」として、割り切って付き合っていく。これが私の今の考えです。&lt;/p&gt;
+&lt;p&gt;ところで、この「サクラ」という概念、あなたの身の回りではどのような形で使われていることがあるでしょうか？例えば、インターネット上のレビュー、イベントの参加者、あるいはオンラインゲームの賑やかしなど、様々な場面で形を変えて存在しているかもしれませんね。ぜひ、この概念を色々なことに置き換えて考えてみてください。もちろん、倫理的な問題は常に意識すべきですが、発信を続けるためのモチベーション維持という側面では、AIの活用も一つの選択肢になりうるのかもしれません。&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_6">
+  <data key="d0">イラクを攻撃したアメリカのバンカーバスター という 地下 爆...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250624/1750715246</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">14</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+&lt;p&gt;タイトル: 地下80mを穿つ衝撃！バンカーバスターと私たちの未来、そしてナッツの価格…&lt;/p&gt;
+&lt;p&gt;
+こんにちは！皆さんは「バンカーバスター」という言葉を聞いたことがありますか？最近、イラクを攻撃したというニュースで耳にした方もいるかもしれませんね。アメリカが使用したとされるこの「地下爆弾」、なんと地下80mまで攻撃できるというから驚きです！
+&lt;/p&gt;
+&lt;p&gt;
+地下80mですよ？それって、どれだけのエネルギーを注ぎ込んで、どうやってそこまで貫通させるんでしょうか？単純に考えると、とんでもない威力ですよね。きっと、爆弾の重さや先端に使われている材料、そして爆発の仕組みなど、様々な高度な技術が組み合わされているんでしょうね。
+&lt;/p&gt;
+&lt;p&gt;
+特にイラクは砂地や砂漠が多いと聞きますが、それでも地下80mはすごい。だって、もし普通の岩盤だったら、そう簡単にはいかないはずです。固い岩盤なんて、地下にトンネルを掘るだけでも大変ですからね！地下深くを攻撃できる兵器の進化には、正直ゾッとします。
+&lt;/p&gt;
+&lt;p&gt;
+このような事態が、どうか戦争に発展しないことを心から願うばかりです。私たちは遠い国の出来事だと傍観しているわけにはいきません。なぜなら、イラクは日本と長年国交があり、実は私たちの生活にも深く関わっているからです。
+&lt;/p&gt;
+&lt;p&gt;
+特に重要なのが、イラクも深く関係する中東の重要な海上輸送路、それが&lt;strong&gt;ホルムズ海峡&lt;/strong&gt;です。もし、この海峡が何らかの理由で封鎖されるようなことになれば、日本は計り知れないほど重大な影響を受けてしまいます。ご存じの通り、日本の食料品は90%以上を輸入に頼っており、原油なども多くをこの海峡経由で運んでいます。
+&lt;/p&gt;
+&lt;p&gt;
+もしそうなれば、当然ながら物価はどんどん上がっていくでしょう。私たちの毎日の生活も大きく影響を受け、食費や光熱費が高騰する…なんてことにもなりかねません。個人的には、大好きなナッツの価格上昇だけは勘弁してほしいと切実に願ってしまいます（笑）。
+&lt;/p&gt;
+&lt;p&gt;
+こんな状況を見ると、かつて&lt;a href="https://example.com/hyakuta_books" rel="noopener noreferrer" target="_blank"&gt;百田尚樹先生の著作&lt;/a&gt;でも描かれていた、第二次世界大戦前の原油輸入を巡る日本の苦境が思い出されます。あの時のような、資源を巡る国際情勢の緊迫が再び起こるのではないかと考えると、本当に怖いです。
+&lt;/p&gt;
+&lt;p&gt;
+国際情勢は複雑ですが、地球の裏側の出来事も、巡り巡って私たちの暮らしに直結していることを改めて痛感します。どうか平和的な解決がなされ、これ以上不安なニュースが届かないことを祈るばかりです。
+&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_7">
+  <data key="d0">とりあえず 洗面台で洗濯できる器具です あと バスタオル代わ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750674964</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">27</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: &lt;p&gt;夏の準備はこれで完璧！賢いアイテムで快適な毎日を手に入れよう&lt;/p&gt;
+
+本文:
+&lt;p&gt;夏の到来に向けて、皆さんはどんな準備をしていますか？ 今回は、届いたばかりの素敵なアイテムたちをヒントに、私たちの日常をぐっと快適にする賢い選択肢をご紹介します。旅行や出張、あるいは普段の生活で「これがあったら便利なのに！」と感じる瞬間を、これらのアイテムが解決してくれるかもしれません。&lt;/p&gt;
+&lt;h2 id=""&gt;
+&lt;/h2&gt;
+&lt;p&gt;まずご紹介したいのが、「洗面台で洗濯できる器具」。この&lt;a href="https://www.amazon.co.jp/s?k=%E3%83%9F%E3%83%8B%E6%B4%97%E6%BF%AF%E6%A9%9F+%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%96%E3%83%AB&amp;amp;__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&amp;amp;ref=nb_sb_noss"&gt;ポータブルミニ洗濯機&lt;/a&gt;は、手のひらサイズのコンパクトさで、USB給電式という優れもの。吸盤で洗面台やバケツに固定できるので、旅行先や出張、単身赴任先など、どこでも手軽に少量の洗濯が可能です。デリケートな下着や靴下、赤ちゃんの衣類など、すぐに洗いたいものがある時に本当に便利ですよね。あるオンラインストアでは、このミニ洗濯機が&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%BB%E3%83%BC%E3%83%AB"&gt;タイムセール&lt;/a&gt;で大幅割引になっていて、「まもなく売り切れ！」の表示が購買意欲をそそります。こんな賢いアイテムがあれば、荷物も減らせて、旅先での洗濯の悩みも解消されそうです。&lt;/p&gt;
+&lt;h2 id="-1"&gt;
+&lt;/h2&gt;
+&lt;p&gt;次に、夏のワードローブに欠かせない機能性ウェアです。特に注目したいのが、「バスタオル代わりにもなるシャツ」。これは、その名の通り抜群の吸水性と速乾性を兼ね備えたシャツのこと。汗をかいてもすぐに乾き、べたつきにくいので、スポーツシーンはもちろん、夏の普段使いにも最適です。ご紹介する&lt;a href="https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%AD%E3%82%B7%E3%83%A3%E3%83%84"&gt;ポロシャツ&lt;/a&gt;は、襟と袖口の黒いラインがアクセントになったスタイリッシュなデザインで、通気性の良い鹿の子編みや吸湿ニット生地が使われています。3枚セットで販売されていることが多いので、洗い替えにも困りませんね。&lt;/p&gt;
+&lt;p&gt;そして夏用のパンツも、快適さを追求したものが人気です。接触冷感素材「ICE SILK」を使用したパンツは、まるで体感温度が-9℃になるようなひんやり感を提供してくれると言われています。化学繊維である&lt;a href="https://ja.wikipedia.org/wiki/%E5%90%88%E6%88%A6%E7%B9%8A%E7%B6%AD"&gt;合成繊維&lt;/a&gt;の特性を活かし、通気性や速乾性にも優れています。ウエスト部分はゴムとドローストリングで調整可能なので、&lt;a href="https://ja.wikipedia.org/wiki/%E3%82%B8%E3%83%A7%E3%82%AC%E3%83%BC%E3%83%91%E3%83%B3%E3%83%84"&gt;ジョガーパンツ&lt;/a&gt;のようにリラックスして履けるのも魅力。こちらもオンラインストアで84%OFFという破格のセールが行われており、「残りわずか！」の表示に思わず手が伸びてしまいそうです。&lt;/p&gt;
+&lt;h2 id="-2"&gt;
+&lt;/h2&gt;
+&lt;p&gt;オンラインショッピングの注文履歴を見てみると、今回ご紹介したミニ洗濯機や機能性ウェアが一度に手に入ることがわかります。配達状況やキャンセル情報、そしてさらにお得な関連商品のレコメンデーションまで表示されるのは、本当に便利ですよね。特に、期間限定の割引やカウントダウンタイマーなど、消費者の購買意欲を刺激する&lt;a href="https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0"&gt;マーケティング&lt;/a&gt;戦略が満載で、お得に賢く買い物ができるよう工夫されています。&lt;/p&gt;
+&lt;p&gt;この夏は、洗面台で手軽に洗濯できる便利な器具と、快適な機能性ウェアで、もっとスマートに、もっと快適に過ごしてみませんか？ 清潔感のあるアイテムと、涼しい着心地の衣類が、きっとあなたの夏をより豊かにしてくれるはずです。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/cwke98R.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像2" src="https://i.imgur.com/H2CJSs0.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像3" src="https://i.imgur.com/GB57dVL.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像4" src="https://i.imgur.com/0cIpT4J.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像5" src="https://i.imgur.com/otvgsZI.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像6" src="https://i.imgur.com/tpt328W.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像7" src="https://i.imgur.com/eCY5KPU.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像8" src="https://i.imgur.com/tx4CGMV.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_8">
+  <data key="d0">今日も 謎の荷物が届いていました ちょっと今日の荷物はでかい...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750673393</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">28</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: 今日の『謎の白い荷物』から考える、私たちの消費行動の今
+
+本文:
+&lt;p&gt;先日、またしても自宅に&lt;strong&gt;「謎の荷物」&lt;/strong&gt;が届きました。画像を見ていただければわかるように、私の腕がほとんど隠れてしまうほどの&lt;strong&gt;大きな白い荷物&lt;/strong&gt;です。光沢のあるビニール素材に包まれ、しわやたるみから、中には衣類のような柔らかいものがぎっしり詰まっているのが見て取れますね。自分でも何を頼んだかすぐに思い出せないのですが、おそらく半袖シャツが3枚は入っているんじゃないか、と推測しています。&lt;/p&gt;
+&lt;p&gt;思えば、一昔前まではAmazonや楽天といったお馴染みのECサイトばかり利用していましたが、ここ最近はめっきり出番がなくなりました。実は、我が家のオンラインショッピングは、今や&lt;strong&gt;すべて「Temu（テム）」一色&lt;/strong&gt;なのです。夜の帳が下りた窓の外、ぼんやりと街灯が輝く暗闇を背景に、室内の暖色系の照明の下でこうして荷物を受け取る光景は、もはや現代社会の日常風景となりました。&lt;a href="https://www.statista.com/topics/2157/e-commerce/#dossierKeyfigures"&gt;Eコマースの普及&lt;/a&gt;が私たちの生活にどれほど深く浸透したかを示す一枚とも言えるでしょう。&lt;/p&gt;
+&lt;p&gt;しかし、この消費行動の変化には、私自身も複雑な思いを抱いています。正直なところ、「こうやって中国経済が活性化し、日本の経済が少しずつでも侵食されていくのは目に見えているよな…」と感じずにはいられません。それは理解しているんです。でも、どうか許してください。私のような収入が高くない人間にとって、この魅力的な価格はまさに&lt;strong&gt;「節約」のための生命線&lt;/strong&gt;。日々の暮らしを守るためには、抗いがたい魅力があるのです。&lt;/p&gt;
+&lt;p&gt;もちろん、裕福な方々には、ぜひ日本の企業から商品を購入して、日本経済を支えていただきたいと心から願っています。私たち庶民は、今日も大きな白い荷物を抱え、&lt;strong&gt;「これが節約なんだ」&lt;/strong&gt;と自分に言い聞かせながら、夜の静けさの中、オンラインショッピングの恩恵と課題を同時に感じているのです。ちなみに、この荷物を届けてくれたのは、おなじみの&lt;a href="https://www.kuronekoyamato.co.jp/"&gt;ヤマト運輸&lt;/a&gt;さんか、&lt;a href="https://www.sagawa-exp.co.jp/"&gt;佐川急便&lt;/a&gt;さん、それとも&lt;a href="https://www.post.japanjapan.jp/"&gt;日本郵便&lt;/a&gt;さんのいずれかでしょう。彼らの日々の努力があってこそ、私たちの便利な生活は成り立っていますね。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/JA1evPc.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_9">
+  <data key="d0">月曜日は野菜の安い日（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750670414</data>
+  <data key="d2"></data>
+  <data key="d3">AI生成, LINE Bot</data>
+  <data key="d4">31</data>
+  <data key="d5">&lt;div class="entry-content hatenablog-entry"&gt;
+  
+    タイトル: 日常の断片：月曜の買い物、エクレアの行方、そして健康診断の日に思うこと
+
+本文:
+&lt;p&gt;月曜日といえば、スーパーの特売日が多い日ですよね。私もこの日はいつも楽しみにしています。先日も&lt;a href="https://www.bunkado.com/"&gt;フレッシュフードストア 文化堂&lt;/a&gt;横浜高島店に立ち寄ると、狙い通り野菜が安くなっていました。&lt;/p&gt;
+&lt;p&gt;特に目に留まったのは、初めて見る&lt;strong&gt;「空芯菜」&lt;/strong&gt;。中華料理で美味しいと聞いていたので、早速カゴへ。他にも&lt;a href="https://www.maruha-nichiro.co.jp/"&gt;マルハニチロ&lt;/a&gt;の「金のとんぶり親子」が2つ、それに懐かしの&lt;a href="https://www.yaokin.com/products/0000000302"&gt;うまい棒&lt;/a&gt;やさいサラダ味など、どれも100円前後の手軽な品ばかり。合計たったの533円。夕食の準備やちょっとしたおやつにぴったりな、満足度の高いお買い物でした。ちなみに、レシートの日付はなんと2025年6月23日（月）。ちょっと未来にタイムスリップしたような、不思議な感覚に包まれました。&lt;/p&gt;
+&lt;p&gt;買い物の後、ふと気づいたことがあります。「あれ、エクレアってこんなに小さかったっけ？」と。以前よりなんだかコンパクトになった気がするんですよね。ダイエット中なので、この変化は&lt;strong&gt;「まあ、ダイエットには向いてる」&lt;/strong&gt;と前向きに捉えることにしました！&lt;/p&gt;
+&lt;p&gt;ちょうどその日、手元にあったのは「北海道産牛乳のホイップカスタードエクレア」。赤と白を基調としたパッケージには「PREMIUM SWEETS」の文字が光ります。都会の喧騒の中、背景には自転車がずらりと並ぶ駐輪場や、行き交う人々。そんな日常の風景の中で、このエクレアはささやかなご褒美のように輝いて見えました。日本の&lt;a href="https://www.japan.travel/japan-topics/ja/convenience-store-sweets-a-guide-to-japanese-desserts-at-konbini/"&gt;コンビニスイーツ&lt;/a&gt;のクオリティの高さには、いつも驚かされます。&lt;/p&gt;
+&lt;p&gt;そしてこの日は、年に一度の健康診断があった日でもありました。診断前に眉毛のあたりを軽くマッサージしたら、なんと視力が少し回復したんです！体重は去年と変わらずキープできていて、ほっと一安心。&lt;/p&gt;
+&lt;p&gt;仕事終わりに同期と集まる機会もありました。年齢が一緒の同期が4人も揃うと、なんだか&lt;strong&gt;「気持ち悪い」&lt;/strong&gt;（良い意味で、ですよ！）と笑い合ってしまうほど、気兼ねなく話せる仲間たちです。&lt;/p&gt;
+&lt;p&gt;そんな中、少し考えさせられる話も耳にしました。陶器関連の仕事をしている同期の話で、知人が5年前から脳の障害で寝込んでいるというのです。何気ない日常を送る自分たちとは対照的な現実に、心が締め付けられました。本当に「かわいそうだな」と。人生には、予期せぬ困難が突然訪れることもあると改めて感じさせられました。&lt;/p&gt;
+&lt;p&gt;月曜日の何気ない一日でしたが、買い物での小さな発見、エクレアの変化、健康への意識、そして同期との会話を通して、様々なことを考えさせられる日となりました。&lt;br/&gt;
+今日という一日に感謝しつつ、また明日も頑張ろうと思える、そんな充実した日常のひとコマでした。&lt;/p&gt;
+
+## 📸 投稿画像
+
+&lt;p&gt;&lt;img alt="画像1" src="https://i.imgur.com/x7IuqsJ.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="画像2" src="https://i.imgur.com/sTBiEKq.jpeg" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"/&gt;&lt;/p&gt;
+&lt;/div&gt;</data>
+</node>
+<node id="article_10">
+  <data key="d0">洗濯代が400円 と乾燥機が100円です
+（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750630292</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_11">
+  <data key="d0">先週 手で買った 親指サイズのカメラだが 究極 山に持って行...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750629484</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_12">
+  <data key="d0">横浜ライフ・ディスカバリー「仕事と私生活の充実を目指して」...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750628075</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_13">
+  <data key="d0">洗濯物がたまり たまったので持ってきました 今回は洗濯をした...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250623/1750627376</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_14">
+  <data key="d0">Sunoで作成した、私のプレイリストをチェックしてください！...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750599847</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_15">
+  <data key="d0">投稿記事（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750587324</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_16">
+  <data key="d0">今日は1日寝てました なんせ 明日は 健康診断です 夜の21...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750587241</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_17">
+  <data key="d0">朝からドラッグストアにコーラック 前に安いやつを買って大失敗...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750554787</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_18">
+  <data key="d0">昨日のナイトハイクの報告をします 昨日 日曜日に 塔ノ岳で前...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750552625</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_19">
+  <data key="d0">横浜の街を歩いていると それこそ本当に1日あたり 何千人とい...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750551755</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_20">
+  <data key="d0">野球部のリーダーとか 野球部に入ってる人間で友達になれる感覚...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750550236</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_21">
+  <data key="d0">ましてや 方法を変えようと思うとまず システムが完成している...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750548625</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_22">
+  <data key="d0">で会社の組織改善をやっていますけれども今でも同じで 案件を取...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750548551</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_23">
+  <data key="d0">ものというものに関しての話です。物というものは 例えば 電化...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250622/1750548384</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_24">
+  <data key="d0">渋沢駅手前まで来ました何気に 歩道橋 登ったんですがその階段...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750513503</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_25">
+  <data key="d0">一旦 撤退して渋沢駅の方に戻ることにしました ちょっと 夜景...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750511897</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_26">
+  <data key="d0">それに山の麓でやたらしかが泣いてます 鹿が夜行動物だというこ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750510061</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_27">
+  <data key="d0">撤退します さっき 最後の該当のところで ザックと新しい ラ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750509992</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_28">
+  <data key="d0">登山口の大倉バス停に到着しました ここは 土曜日日曜日の朝は...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750508332</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_29">
+  <data key="d0">8時に 秦野駅に着きその後8時10分のバスに乗って大蔵入口ま...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750507135</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_30">
+  <data key="d0">今日は今から塔ノ岳に向かいます。（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750498509</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_31">
+  <data key="d0">腹減りました</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250621/1750473824</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_32">
+  <data key="d0">**昼礼での話**
+
+大学時代の友人が先日亡くなりました。彼...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250620/1750375727</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_33">
+  <data key="d0">昨晩からピーナッツを食べて ちょっとお腹がいっぱいですただ ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250620/1750375589</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_34">
+  <data key="d0">昨晩からピーナッツを食べて ちょっとお腹がいっぱいですただ ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250620/1750375472</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_35">
+  <data key="d0">朝食はバターフレット ですこんなの家でも作れるんだけどね や...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250619/1750291045</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_36">
+  <data key="d0">JIRAのログ取得アプリ構想、ローカルPowerShellサーバーでCORSを回避する野望はアリか？</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250619/1750289263</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_37">
+  <data key="d0">正直言うと私は今 の単身生活にうんざりしています 季節は冬は...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750243496</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_38">
+  <data key="d0">一応 何を買ったのかがわかるように冷蔵庫の中の写真を撮ること...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750243363</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_39">
+  <data key="d0">帰宅すると 今日もあやしげな 荷物が届いていました 多分テム...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750243284</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_40">
+  <data key="d0">多分 横浜駅近くで一番安いドラッグ スーパーです（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750242657</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_41">
+  <data key="d0">先週テムで発注した小型サイズのカメラ これは 今の LINE...（画像・動画付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750242264</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_42">
+  <data key="d0">友人からお誘いがあった。丹沢の山奥に ミシュラン 滝があるみ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750241146</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_43">
+  <data key="d0">しかし 夕食前に食べた ピーナッツでまだお腹が膨れています ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750240942</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_44">
+  <data key="d0">ギリギリ 終わりました カシューツリー という 港元町の夏 ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750240119</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_45">
+  <data key="d0">中華街に突撃しました まだ日が暮れていないのですが まだ人は...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750239198</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_46">
+  <data key="d0">投稿記事（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750238500</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_47">
+  <data key="d0">どんどん 南に向かって歩いています 目の前には横浜 郵便局が...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750238448</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_48">
+  <data key="d0">有名な馬車道を歩いています ここは 昔 開港した直後に横浜の...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750237924</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_49">
+  <data key="d0">みなとみらい21地区にある横浜 エアキャビンというロープウェ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750237519</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_50">
+  <data key="d0">会社を飛び出したら目の前に ランドマークタワーがあります ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750237006</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_51">
+  <data key="d0">そんなわけで外国人と出会うとそういう文化の違い カルちゃんは...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750236925</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_52">
+  <data key="d0">あと外国人といえば私はよく 山で外国人を連れて行くことがあっ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750236860</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_53">
+  <data key="d0">半年ぐらい前に出会ったフィリピン人の人からメールが来ました ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750236782</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_54">
+  <data key="d0">みなとみらい地区には3つほどコンサート会場があってピア アリ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750236685</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_55">
+  <data key="d0">会社で1個60円のスニーカーの半分にな...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750203035</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_56">
+  <data key="d0">ナッツと言っても同じ夏でも値段が違うことが気になってます そ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750202931</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_57">
+  <data key="d0">横浜に来て一人暮らしで自炊をしているとついつい 作りすぎたり...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750202836</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_58">
+  <data key="d0"># ピーナッツの圧倒的コスパ論
+
+ナッツ類の価格を比較してみ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750202672</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_59">
+  <data key="d0">おっと、失礼しました！「昼礼」ですね、忠霊と読み間違えてまし...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750202097</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_60">
+  <data key="d0">https://grok.com/share/bGVnYWN...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750201732</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_61">
+  <data key="d0">ふくらはぎのサポーターが最高 やっぱり夏場になるとふくらはぎ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750183537</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_62">
+  <data key="d0">個人的に 今持っている服の中でもう一生 話せないなと思うアイ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750183397</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_63">
+  <data key="d0">昨日の夕食は結局牛乳とフルーツグラノーブラになってしまった ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750183170</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_64">
+  <data key="d0">つぶやきデータソースとしては ブログ という点は発信という意...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750182703</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_65">
+  <data key="d0">先日は 後楽を飲んで山に行く 1日前だと完全に 翌日 お腹下...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750182629</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_66">
+  <data key="d0">バスタオルと湯上がりのパジャマキみたいなのが一緒になった本を...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750182431</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_67">
+  <data key="d0">英語の YouTube 素材を自動的に探してきて mp3レ...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750182351</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_68">
+  <data key="d0">夏場だけ自宅で洗濯したい乾燥機はいらない簡易的に回す 洗剤入...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250618/1750181162</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_69">
+  <data key="d0">先週 参加できなかったハイキング 代わりに 小田原城 見学し...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750161025</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_70">
+  <data key="d0">火曜日 会社 終わりました 会社帰りにまだ食料買いに行きまし...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750160124</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_71">
+  <data key="d0">オフィスへ向う（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750117542</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_72">
+  <data key="d0">暑い、もう夏やな（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750117083</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_73">
+  <data key="d0">いつもの通勤、横浜駅を抜けて（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750116586</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_74">
+  <data key="d0">横浜駅到着 自宅に帰ってきました 電気代とテムからの配送があ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750107368</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_75">
+  <data key="d0">一晩明けた（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250617/1750103811</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_76">
+  <data key="d0">今夜は乗車率５０％、となり空いていて超ラッキー、今夜は熟睡、...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750081725</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_77">
+  <data key="d0">ツーリスト バス 22時40分 結構 乗客 たくさんあります（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750081209</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_78">
+  <data key="d0">前々から気になる、変なホテルって何やねん、調べて（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750080692</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_79">
+  <data key="d0">結構ふくらはぎが冷えるんですよね。ふくらはぎ用のサポーターと...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750080541</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_80">
+  <data key="d0">今夜のバスは2000円、楽天ポイントで実質1600円でした。（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750080172</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_81">
+  <data key="d0">夜行バスは意外に冷房寒いんですよね。いまも待合室で冷房効いて...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750079509</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_82">
+  <data key="d0">待合室です。ブルーベリーヨーグルト食べました（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750076505</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_83">
+  <data key="d0">烏丸で乗り換えて京都に行きます（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750074974</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_84">
+  <data key="d0">今夜も夜行バスで横浜に帰ります（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250616/1750072334</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_85">
+  <data key="d0">焼き鳥ほんまに美味い！～鳥貴族にて</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250615/1749979660</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_86">
+  <data key="d0">今日は鳥貴族に来ました、ツバメが巣を作ってました。鳥だけに</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250615/1749977867</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_87">
+  <data key="d0">歯ぐきピンチ！→人気ウォーターフロスがTemuで爆安</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250614/1749845142</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_88">
+  <data key="d0">大阪のりくるおじさんのチーズケーキ 並びすぎて買えへんわ（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749809135</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_89">
+  <data key="d0">よく充電器とUSBケーブルを忘れる。店に入った意味ないやんか</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749783830</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_90">
+  <data key="d0">クソ高いが一番安いセット（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749783245</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_91">
+  <data key="d0">久しぶりに グランフロントをやってきた。あいかわらずよく分か...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749782771</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_92">
+  <data key="d0">これに行きたいな 夏になると 昆虫カブトムシ 取りに行きたく...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749780732</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_93">
+  <data key="d0">さよならAmazonプライム！月600円のムダ金が「脱Amazon」のきっかけになった話</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749780340</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_94">
+  <data key="d0">今日は先週 抜けた 奥歯の詰め物の治療に大阪の歯医者に行きま...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749772145</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_95">
+  <data key="d0">今日は先週 抜けた 奥歯の詰め物の治療に大阪の歯医者に行きま...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749771917</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_96">
+  <data key="d0">なんか グラビティ という SNS が流行っているらしい</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749771840</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_97">
+  <data key="d0">高速長岡京に到着 故障者の渋滞のため 5時半到着予定が7時半...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749767100</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_98">
+  <data key="d0">本当にブログの投稿が楽になったな。自分の記録用に、行動ログ、...</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749766488</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_99">
+  <data key="d0">ようやく一晩明けて大津インター 到着です 今日は快晴。 週末...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749765326</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_100">
+  <data key="d0">ひたすらフェリーの如く揺れる車内、本当に車体が何処かで壊れそ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749750590</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_101">
+  <data key="d0">今週もたびのすけバスで京都に帰ります（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250613/1749742130</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_102">
+  <data key="d0">明日はこれに会社を休んで行ってきます 仕事ですけど 仕事じゃ...（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250612/1749731628</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_103">
+  <data key="d0">ひたすら 怪しい料理ですが（画像付き）</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250610/1749567521</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_104">
+  <data key="d0">歯医者の恐怖</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250608/1749380116</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_105">
+  <data key="d0">情報発信の革命：つぶやきからコンテンツへ</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250608/1749366869</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_106">
+  <data key="d0">特別な一日：浅間寺の華やかな祭りに触れる</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250608/1749362727</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_107">
+  <data key="d0">【保存版】スーパー特売日の裏技ランキングTOP10！店も喜ぶ賢い買い物術</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250525/1748148096</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_108">
+  <data key="d0">大阪・関西万博 日本館：「いのちの未来」へ繋ぐ循環の物語</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250522/1747858777</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_109">
+  <data key="d0">トランプ大統領の就任演説：そのメッセージと現在への影響</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250522/1747858627</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_110">
+  <data key="d0">爪切りすら忘れる僕がたどり着いた「習慣サイクル」の真実（良い習慣と悪習慣のハザマで）**</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250514/1747167404</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_111">
+  <data key="d0">【業務効率UP】今日から始める！CLIベースのAIタスク管理エージェントで仕事が変わる</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250509/1746743710</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_112">
+  <data key="d0">マジかよ…自作の特許級ベッドが粉砕した。これからどうすんだ？</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250504/1746313141</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_113">
+  <data key="d0">連休初日の大阪探訪、ハナマサと戎橋で感じたリアル</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250504/1746311089</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_114">
+  <data key="d0">万博行ってきた！予約全敗からの日本館朝一突撃！嫁さん不機嫌でも未来はすごかった話</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250501/1746059367</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_115">
+  <data key="d0">朗報】もうレタスを無駄にしない！100均グッズでシャキシャキ長持ち驚きの裏ワザ</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250406/1743904487</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_116">
+  <data key="d0">ジブリスタイルと著作権問題の最前線：クリエイティブの未来を考える</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250327/1743068411</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_117">
+  <data key="d0">AIにコードを乗っ取られた夜…😩 自己修正システムは「悪夢」か「福音」か？</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250324/1742769577</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_118">
+  <data key="d0">業務目標管理シートが劇的に変わる！生成AIで5つの課題を解決する方法</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250321/1742511810</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_119">
+  <data key="d0">学校の授業で活用できる！管理者権限不要のWebアプリ開発学習テンプレート</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250319/1742336763</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_120">
+  <data key="d0">小さな革命！17000円のミニPCでNASを自作してみた</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250315/1742035075</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_121">
+  <data key="d0">Cursor革命！AIエージェントがアプリ開発を自動化、動画字幕＆シナリオ作成も爆速化で業界激変の予感！**</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250312/1741733664</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_122">
+  <data key="d0">愚者は経験に学び、賢者は歴史に学ぶ…歴史を学ぶ大切さを俳句に乗せて</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250312/1741720574</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_123">
+  <data key="d0">仕事は最初から上手くいかないと思った方が気が楽になる</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250312/1741719614</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_124">
+  <data key="d0">【実践ガイド】没頭体験マップで見つける「時間を忘れる喜び」</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250311/1741640869</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_125">
+  <data key="d0">モチベーションの源泉は「意味」だ！～内発的動機を見つける逆転の発想～</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250311/1741636803</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_126">
+  <data key="d0">単なる本からブームを生み出すコツ：コンマリの「Spark Joy」に学ぶ</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741496446</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_127">
+  <data key="d0">「大谷翔平も愛読！渋沢栄一『論語と算盤』は現代の成功哲学？CSRと知恵の重要性を徹底解説」</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741492341</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_128">
+  <data key="d0">「渋沢栄一『論語と算盤』は現代のCSRに通じる？グローバルな視点でビジネスを考える【徹底解説】</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741492041</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_129">
+  <data key="d0">ChatGPTはつまらないけど楽したい人には使える？クリエイティブは人間だけのもの？</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741489804</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_130">
+  <data key="d0">ビジネススクールってなんなんだよ！ 実体験と未来の学び方</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741489051</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_131">
+  <data key="d0">「言語化」の力：小松製作所のAIと近藤麻理恵の片付け哲学から学ぶこと</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741487035</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_132">
+  <data key="d0">犯人不在の推理小説？創作の面白い裏側</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741484665</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_133">
+  <data key="d0">起業家が熱狂する漫画『キングダム』の魅力を徹底解説</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741484437</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_134">
+  <data key="d0">長い本を読み切るコツは「輪読」にあり！人間の脳も並列処理の時代</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741483695</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_135">
+  <data key="d0">両利き経営の真髄を知り、AI時代を生き抜く</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741481972</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_136">
+  <data key="d0">GROKとChatGPTの比較、Xのプレミアムサブスクリプション、AI独占の可能性</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250309/1741481944</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_137">
+  <data key="d0">冬の暖房費高騰に勝つ！テント×ホットカーペットで作る最強の節約リモートワーク環境</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250308/1741438549</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_138">
+  <data key="d0">デンソーが開発する未来の磁石技術 - レアアースに依存しない革新的な解決策</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740732169</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_139">
+  <data key="d0">AI時代を支えるエネルギー革命：今、注目すべき「小型原子炉（SMR）」関連銘柄</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740698274</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_140">
+  <data key="d0">【2025年最新】AI時代に稼げる！おすすめ副業8選とプラットフォーム活用法</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740697736</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_141">
+  <data key="d0">「いざという時のために」持っておくべき必需品リスト</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740697382</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_142">
+  <data key="d0">人生を豊かにする「これさえやっておけば」の習慣</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740696775</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_143">
+  <data key="d0">日常生活での「これさえやっておけば…」という習慣性ノウハウ</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740695664</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_144">
+  <data key="d0">test</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740694804</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_145">
+  <data key="d0">人工知能（AI）の進化とその社会への影響</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740694626</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_146">
+  <data key="d0">人工知能（AI）の進化とその社会への影響</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250228/1740693976</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_147">
+  <data key="d0">「城崎温泉で家族旅行の思い出を完璧に残す！AI活用＆プロ仕様の動画作成術｜御所の湯の絶景も逃さないコツ」**</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250212/1739308036</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_148">
+  <data key="d0">城崎温泉行くなら外せない！【御所の湯】で美人湯と歴史ロマンに浸る癒し体験</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250212/1739307727</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<node id="article_149">
+  <data key="d0">家族旅行の動画を時短で完成させる！AI活用＆プロYouTuber流テクレート術｜城崎温泉の思い出も残すコツ</data>
+  <data key="d1">https://lifehacking1919.hatenablog.jp/entry/20250212/1739307373</data>
+  <data key="d2"></data>
+  <data key="d3"></data>
+  <data key="d4">0</data>
+  <data key="d5"></data>
+</node>
+<edge source="article_0" target="article_2">
+  <data key="d6">0.47668245936750514</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_0" target="article_3">
+  <data key="d6">0.4349086342819287</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_0" target="article_7">
+  <data key="d6">0.8002382322981616</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_2" target="article_7">
+  <data key="d6">0.5539453863186573</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_3" target="article_7">
+  <data key="d6">0.44777002184456244</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_4" target="article_7">
+  <data key="d6">0.311405840680621</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_7" target="article_9">
+  <data key="d6">0.3296381093980359</data>
+  <data key="d7">content_similarity</data>
+</edge>
+<edge source="article_8" target="article_9">
+  <data key="d6">0.4230218580175413</data>
+  <data key="d7">content_similarity</data>
+</edge>
+</graph></graphml>

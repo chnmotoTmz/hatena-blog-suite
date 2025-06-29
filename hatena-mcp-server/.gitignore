@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+venv_*/
+test_env/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Local configuration
+config.py
+*.ini
+*.env
+
+# Media files
+*.mp4
+*.mov
+*.avi
+*.wmv
+
+# Temporary files
+*.csv
+output.txt
+post.txt
+
+# System files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ChromaDB
+chroma_db/
+
+# Output directories
+output/
+test_output/
+
+# Keep specific files
+!requirements.txt
+!README.md

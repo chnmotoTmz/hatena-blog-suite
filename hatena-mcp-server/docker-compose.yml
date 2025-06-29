@@ -1,0 +1,213 @@
+version: '3.8'
+
+# Hatena Agent v2 - Docker Compose Configuration
+# クラウドコード環境対応マルチサービス構成
+
+services:
+  # メインアプリケーション
+  hatena-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hatena-agent-main
+    restart: unless-stopped
+    ports:
+      - "${API_PORT:-8080}:8080"
+      - "${MCP_PORT:-3000}:3000"
+    environment:
+      - API_HOST=0.0.0.0
+      - API_PORT=8080
+      - MCP_PORT=3000
+      - NODE_ENV=production
+      - ENVIRONMENT=docker
+    env_file:
+      - .env.docker
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./output:/app/output
+      - ./backup:/app/backup
+    networks:
+      - hatena-network
+    depends_on:
+      - redis
+      - postgres
+    healthcheck:
+      test: ["/usr/local/bin/docker-healthcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: hatena-agent-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    networks:
+      - hatena-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: hatena-agent-postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: hatena_agent
+      POSTGRES_USER: ${POSTGRES_USER:-hatena_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hatena_password}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=C"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    networks:
+      - hatena-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hatena_user} -d hatena_agent"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  # Nginx Reverse Proxy & Static File Server
+  nginx:
+    image: nginx:alpine
+    container_name: hatena-agent-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    networks:
+      - hatena-network
+    depends_on:
+      - hatena-agent
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Monitoring (Prometheus)
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: hatena-agent-prometheus
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=200h'
+      - '--web.enable-lifecycle'
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    networks:
+      - hatena-network
+
+  # Monitoring (Grafana)
+  grafana:
+    image: grafana/grafana:latest
+    container_name: hatena-agent-grafana
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: ${GRAFANA_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-admin}
+      GF_USERS_ALLOW_SIGN_UP: false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./monitoring/grafana/datasources:/etc/grafana/provisioning/datasources:ro
+    networks:
+      - hatena-network
+    depends_on:
+      - prometheus
+
+  # Log Aggregation (Fluentd)
+  fluentd:
+    build:
+      context: ./monitoring/fluentd
+      dockerfile: Dockerfile
+    container_name: hatena-agent-fluentd
+    restart: unless-stopped
+    ports:
+      - "24224:24224"
+      - "24224:24224/udp"
+    volumes:
+      - ./monitoring/fluentd/conf:/fluentd/etc
+      - ./logs:/fluentd/log
+    networks:
+      - hatena-network
+
+networks:
+  hatena-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  redis_data:
+    driver: local
+  postgres_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  grafana_data:
+    driver: local
+
+# Development Override
+# Use: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+---
+version: '3.8'
+
+# Development configuration
+services:
+  hatena-agent:
+    build:
+      target: development
+    environment:
+      - NODE_ENV=development
+      - DEBUG_MODE=true
+      - RELOAD_ON_CHANGE=true
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/venv
+    command: ["shell"]
+    
+  # Hot reload for frontend development
+  frontend-dev:
+    image: node:18-alpine
+    container_name: hatena-agent-frontend-dev
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "3002:3000"
+    command: >
+      sh -c "
+        npm install -g live-server &&
+        live-server --host=0.0.0.0 --port=3000 --no-browser
+      "
+    networks:
+      - hatena-network

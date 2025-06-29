@@ -1,0 +1,87 @@
+{
+  "writing_style": {
+    "formality_level": "semi-formal",
+    "tone": "friendly",
+    "sentence_length": "medium",
+    "use_emojis": false,
+    "first_person": true
+  },
+  "vocabulary_preferences": {
+    "technical_terms": "moderate",
+    "foreign_words": "minimal",
+    "colloquialisms": "some"
+  },
+  "content_preferences": {
+    "introduction_style": "direct",
+    "conclusion_style": "summary",
+    "use_examples": true,
+    "include_personal_anecdotes": true
+  },
+  "learned_patterns": {
+    "sentence_endings": {
+      "ました": 36,
+      "ません": 25,
+      "います": 24,
+      "ょうか": 13,
+      "ります": 12,
+      "iv>": 10,
+      "しょう": 10,
+      "すよね": 9,
+      "でした": 9,
+      "のです": 9,
+      "んです": 6,
+      "うです": 6,
+      "せんね": 6,
+      "れます": 5,
+      "します": 5,
+      "ですね": 4,
+      "えます": 4,
+      "（笑）": 3,
+      "ng>": 3,
+      "ますね": 3
+    },
+    "common_phrases": {
+      "例えば": 4,
+      "実際に": 2,
+      "一方で": 4,
+      "しかし": 10,
+      "とりあえず": 2,
+      "さらに": 3,
+      "そもそも": 1,
+      "ということで": 1,
+      "また": 3,
+      "ちなみに": 2
+    },
+    "vocabulary_preferences": {
+      "katakana_ratio": 0.05750798722044728,
+      "technical_terms": [],
+      "informal_expressions": [],
+      "formal_expressions": []
+    },
+    "paragraph_structure": {
+      "avg_paragraph_length": 633.7941176470588,
+      "avg_sentences_per_paragraph": 9.794117647058824,
+      "uses_bullet_points": true,
+      "uses_numbered_lists": true
+    },
+    "tone_indicators": {
+      "exclamation_ratio": 0.07987220447284345,
+      "question_ratio": 0.09584664536741214,
+      "personal_pronouns": {
+        "私": 38
+      },
+      "emotional_expressions": [
+        "とても",
+        "本当に",
+        "すごい",
+        "本当に",
+        "本当に",
+        "本当に",
+        "すごい",
+        "本当に",
+        "本当に",
+        "本当に"
+      ]
+    }
+  }
+}
