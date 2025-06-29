@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "hatena-unified": {
+      "command": "node",
+      "args": ["C:\\Users\\motoc\\hatena-blog-suite\\mcp\\hatena-mcp-server.js"],
+      "env": {
+        "HATENA_ID": "YOUR_HATENA_ID",
+        "HATENA_BLOG_ID": "YOUR_BLOG_ID",
+        "HATENA_API_KEY": "YOUR_HATENA_API_KEY",
+        "NODE_ENV": "production"
+      }
+    },
+
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    },
+
+    "line-bot": {
+      "command": "npx",
+      "args": ["@line/line-bot-mcp-server"],
+      "env": {
+        "CHANNEL_ACCESS_TOKEN": "YOUR_LINE_CHANNEL_ACCESS_TOKEN",
+        "DESTINATION_USER_ID": "YOUR_LINE_USER_ID"
+      }
+    },
+
+    "redmine": {
+      "command": "uvx",
+      "args": ["--from", "mcp-redmine==2025.04.09.153531", "--refresh-package", "mcp-redmine", "mcp-redmine"],
+      "env": {
+        "REDMINE_URL": "YOUR_REDMINE_URL",
+        "REDMINE_API_KEY": "YOUR_REDMINE_API_KEY"
+      }
+    },
+
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_TOKEN"
+      }
+    },
+
+    "claude-code": {
+      "command": "wsl",
+      "args": [
+        "-e",
+        "bash",
+        "-c",
+        "cd /home/motoc/redmine-agent-wsl && /home/motoc/.npm-global/bin/claude mcp serve"
+      ],
+      "env": {}
+    },
+
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\%USERNAME%"
+      ],
+      "env": {}
+    }
+  }
+}

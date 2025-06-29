@@ -5,3 +5,11 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# 機密設定ファイル
+compose.env
+claude-desktop-config-fixed.json
+claude-desktop-config.json
+*.key
+*.pem
+config/secrets.json
