@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Pythonの依存関係をコピーしてインストール
-COPY requirements-production.txt .
-RUN pip install --no-cache-dir -r requirements-production.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # アプリケーションコードをコピー
 COPY src/ ./src/

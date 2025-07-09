@@ -484,7 +484,7 @@ class HatenaService:
             id_elem = root.find('atom:id', namespaces)
             if id_elem is not None:
                 # URLからエントリIDを抽出
-                entry_id = id_elem.text.split('/')[-1]
+                entry_id = id_elem.text.split('-')[-1]
             
             # 記事URLを取得
             url = ""

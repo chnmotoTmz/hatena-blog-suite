@@ -3,9 +3,9 @@ APIルート定義
 """
 
 from flask import jsonify
-from .webhook_enhanced import webhook_bp  # バッチ処理強化版を使用（修正済み）
-from .api import api_bp
-from .health import health_bp
+from .routes_webhook import webhook_bp  # バッチ処理強化版を使用（修正済み）
+from .routes_api import api_bp
+from .routes_health import health_bp
 
 def register_routes(app):
     """ルートの登録"""
