@@ -302,12 +302,9 @@ def process_user_batch(user_id: str):
             video_messages = [msg for msg in messages if msg['message_type'] == 'video']
             
             # 統合コンテンツを作成（修正版）
-            integrated_content = create_integrated_content_fixed(text_messages, image_messages, video_messages)
+            title, integrated_content = create_integrated_content_fixed(text_messages, image_messages, video_messages)
             
-            if integrated_content:
-                # 適切なタイトルを生成
-                title = generate_article_title(text_messages, image_messages, video_messages)
-                
+            if integrated_content and title:
                 # 【画像URL挿入】投稿直前にImgur URLをルールベースで挿入
                 final_content = insert_imgur_urls_to_content(integrated_content, image_messages)
                 
@@ -328,7 +325,7 @@ def process_user_batch(user_id: str):
                     # 記事情報をデータベースに保存
                     article = Article(
                         title=title,
-                        content=integrated_content,
+                        content=final_content,
                         hatena_url=article_url,
                         published=True,
                         status='published'
@@ -383,8 +380,8 @@ def process_user_batch(user_id: str):
         except:
             pass
 
-def create_integrated_content_fixed(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> str:
-    """統合コンテンツを作成（テキストのみ版）"""
+def create_integrated_content_fixed(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> tuple:
+    """統合コンテンツを作成（タイトルと本文を分けて返す）"""
     try:
         # 【2回目Gemini】すべてのテキスト情報を統合してブログ記事を生成
         all_texts = []
@@ -408,97 +405,58 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
         
         if not all_texts:
             logger.warning("統合するテキストコンテンツがありません")
-            return None
+            return None, None
         
         # すべてのテキストを時系列順に結合
         combined_all_text = "\n\n".join(all_texts)
         
         logger.info(f"【2回目Gemini】ブログ記事生成開始 - 統合テキスト: {len(combined_all_text)}文字")
         
-        # Geminiでテキストのみからブログ記事を生成
+        # Geminiでタイトルと本文を分けて生成
         blog_prompt = f"""
 以下のテキスト情報から、自然で読みやすいブログ記事を作成してください：
 
 {combined_all_text}
 
 要件:
-1. 自然で読みやすい文章にしてください
-2. 画像解析結果については、ぼやかして抽象化してください
-3. 技術的な分析よりも、読者が楽しめる内容にしてください
-4. 1500字以内の本文にしてください
+1. 最初の行にタイトルを記載してください
+2. 2行目以降に本文を記載してください
+3. 自然で読みやすい文章にしてください
+4. 画像解析結果については、ぼやかして抽象化してください
+5. 技術的な分析よりも、読者が楽しめる内容にしてください
+6. 本文は1500字以内にしてください
 https://lifehacking1919.hatenablog.jp/entry/2022/01/30/153627　と口調を合わせてください
-5.タイトルは不要で本文のみとする
-記事として完成した形で出力してください。
+
+フォーマット:
+タイトル
+本文内容...
 """
         
         integrated_content = gemini_service.generate_content(blog_prompt)
         
         if integrated_content and integrated_content.strip():
             logger.info(f"【2回目Gemini】ブログ記事生成成功: {len(integrated_content)}文字")
-            return integrated_content
+            
+            # タイトルと本文を分離
+            lines = integrated_content.split('\n', 1)
+            if len(lines) > 1:
+                title = lines[0].strip()
+                content = lines[1].strip()
+            else:
+                title = lines[0].strip()
+                content = integrated_content
+            
+            logger.info(f"抽出されたタイトル: {title}")
+            return title, content
         else:
             logger.error("【2回目Gemini】ブログ記事生成が空の結果を返しました")
-            return None
+            return None, None
         
     except Exception as e:
         logger.error(f"統合コンテンツ作成エラー: {e}")
         import traceback
         traceback.print_exc()
-        return None
-
-def create_integrated_content(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> str:
-    """統合コンテンツを作成"""
-    try:
-        # テキストを結合
-        combined_text = ""
-        if text_messages:
-            text_contents = [msg['content'] for msg in text_messages]
-            combined_text = "\\n".join(text_contents)
-        
-        # 画像の分析を追加
-        image_analyses = []
-        for img_msg in image_messages:
-            if img_msg.get('file_path'):
-                analysis = gemini_service.analyze_image(img_msg['file_path'])
-                if analysis:
-                    image_analyses.append(analysis)
-        
-        # 動画の分析を追加
-        video_analyses = []
-        for vid_msg in video_messages:
-            if vid_msg.get('file_path'):
-                analysis = gemini_service.analyze_video(vid_msg['file_path'])
-                if analysis:
-                    video_analyses.append(analysis)
-        
-        # 統合プロンプトを作成
-        if combined_text or image_analyses or video_analyses:
-            integration_prompt = f"""
-以下の情報を基に、自然で読みやすいブログ記事を作成してください：
-
-ユーザーのメッセージ：
-{combined_text if combined_text else '（テキストメッセージなし）'}
-
-画像の内容：
-{chr(10).join(image_analyses) if image_analyses else '（画像なし）'}
-
-動画の内容：
-{chr(10).join(video_analyses) if video_analyses else '（動画なし）'}
-
-※ユーザーのメッセージを主体として、画像や動画の内容を自然に組み込んだ記事を作成してください。
-※技術的な分析は控えめにし、読者が楽しめる内容にしてください。
-※画像や動画がある場合は、適切なタイミングで言及してください。
-"""
-            
-            # Geminiで統合記事を生成
-            integrated_content = gemini_service.generate_content(integration_prompt)
-            return integrated_content if integrated_content else None
-        
-        return None
-        
-    except Exception as e:
-        logger.error(f"Error creating integrated content: {str(e)}")
-        return None
+        return None, None
 
 def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> str:
     """ブログ記事にImgur URLをルールベースで挿入"""
@@ -542,121 +500,4 @@ def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> st
         traceback.print_exc()
         return content  # エラー時は元のコンテンツを返す
 
-def generate_article_title(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> str:
-    """記事タイトルを生成"""
-    try:
-        # テキストメッセージから最初の30文字を抽出
-        if text_messages:
-            first_text = text_messages[0]['content']
-            if len(first_text) > 30:
-                base_title = first_text[:30] + "..."
-            else:
-                base_title = first_text
-        else:
-            base_title = "投稿記事"
-        
-        # メディアの種類に応じてタイトルを調整
-        media_count = len(image_messages) + len(video_messages)
-        if media_count > 0:
-            if len(image_messages) > 0 and len(video_messages) > 0:
-                return f"{base_title}（画像・動画付き）"
-            elif len(image_messages) > 0:
-                return f"{base_title}（画像付き）"
-            elif len(video_messages) > 0:
-                return f"{base_title}（動画付き）"
-        
-        return base_title
-        
-    except Exception as e:
-        logger.error(f"Error generating article title: {str(e)}")
-        return "投稿記事"
-
 # バッチ処理状況確認用エンドポイント
-@webhook_bp.route('/batch/status', methods=['GET'])
-def batch_status():
-    """バッチ処理の状況を確認"""
-    global user_message_buffer, user_batch_timers
-    
-    status = {
-        'batch_interval_seconds': BATCH_INTERVAL,
-        'active_batches': len(user_message_buffer),
-        'batch_details': {}
-    }
-    
-    for user_id, messages in user_message_buffer.items():
-        status['batch_details'][user_id] = {
-            'message_count': len(messages),
-            'has_timer': user_id in user_batch_timers,
-            'messages': [
-                {
-                    'type': msg['message_type'],
-                    'timestamp': msg['timestamp'].isoformat(),
-                    'content_preview': msg['content'][:50] + '...' if len(msg['content']) > 50 else msg['content']
-                }
-                for msg in messages
-            ]
-        }
-    
-    return jsonify(status)
-
-# 強制バッチ処理用エンドポイント
-@webhook_bp.route('/batch/force/<user_id>', methods=['POST'])
-def force_batch_processing(user_id: str):
-    """指定ユーザーのバッチを強制処理"""
-    global user_batch_timers
-    
-    try:
-        if user_id in user_batch_timers:
-            user_batch_timers[user_id].cancel()
-            del user_batch_timers[user_id]
-        
-        process_user_batch(user_id)
-        
-        return jsonify({
-            'success': True,
-            'message': f'Forced batch processing for user {user_id}'
-        })
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
-
-# 従来の単体処理用ハンドラー（緊急時用）
-@handler.add(MessageEvent, message=TextMessage)
-def handle_text_message_immediate(event):
-    """テキストメッセージの即座処理（従来版・緊急時用）"""
-    try:
-        user_id = event.source.user_id
-        text = event.message.text
-        
-        # 特定のコマンドで即座処理を実行
-        if text.startswith('/immediate'):
-            content = text.replace('/immediate', '').strip()
-            
-            generated_content = gemini_service.generate_content(content)
-            
-            if generated_content:
-                article_url = hatena_service.post_article(
-                    title=f"即座投稿: {content[:30]}...",
-                    content=generated_content
-                )
-                
-                if article_url:
-                    line_service.send_message(
-                        user_id,
-                        f"⚡ 即座に記事を投稿しました！\\n{article_url}"
-                    )
-                else:
-                    line_service.send_message(
-                        user_id,
-                        "❌ 記事の投稿に失敗しました。"
-                    )
-            else:
-                line_service.send_message(
-                    user_id,
-                    "❌ コンテンツの生成に失敗しました。"
-                )
-                
-    except Exception as e:
-        logger.error(f"Error handling immediate text message: {str(e)}")
