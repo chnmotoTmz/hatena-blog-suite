@@ -18,9 +18,21 @@ import threading
 import time
 from datetime import datetime, timedelta
 from collections import defaultdict
+
 import logging
 from typing import List, Dict, Any
 
+# ログファイル出力設定（logs/app.log, INFO以上, ローテーションなし）
+if not os.path.exists('logs'):
+    os.makedirs('logs')
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('logs/app.log', encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
 logger = logging.getLogger(__name__)
 
 # バッチ処理用のグローバル変数
@@ -391,159 +403,117 @@ def process_user_batch(user_id: str):
 
 def create_integrated_content_fixed(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> tuple:
     """統合コンテンツを作成（タイトルと本文を分けて返す）"""
+
     try:
-        # 【2回目Gemini】すべてのテキスト情報を統合してブログ記事を生成
+        # すべてのテキスト情報を統合
         all_texts = []
-        
-        # テキストメッセージを追加
         if text_messages:
             for msg in text_messages:
                 all_texts.append(f"【メッセージ】{msg['content']}")
-        
-        # 画像メッセージのテキスト化された内容を追加
         if image_messages:
             for msg in image_messages:
-                # message['content']には既にGeminiで解析されたテキストが保存されている
                 if msg.get('content'):
-                    all_texts.append(msg['content'])  # 【画像解析結果】が含まれる
-        
-        # 動画メッセージがあれば追加
+                    all_texts.append(f"【画像説明】{msg['content']}")
         if video_messages:
             for msg in video_messages:
-                all_texts.append(f"【動画】{msg.get('content', '動画が投稿されました')}")
-        
-        if not all_texts:
-            logger.warning("統合するテキストコンテンツがありません")
-            return None, None
-        
-        # すべてのテキストを時系列順に結合
-        combined_all_text = "\n\n".join(all_texts)
-        
-        logger.info(f"【2回目Gemini】ブログ記事生成開始 - 統合テキスト: {len(combined_all_text)}文字")
-        
-        # Geminiでタイトルと本文を分けて生成（ポジティブ指導版プロンプト）
-        blog_prompt = f"""
-🎯 今日のミッション：読者が喜ぶ記事を作ろう！
+                if msg.get('content'):
+                    all_texts.append(f"【動画説明】{msg['content']}")
 
-あなたの体験を、読者にとって価値ある情報に変換していきます。一緒に素晴らしい記事を作り上げましょう！
+        combined_all_text = '\n'.join(all_texts)
 
-入力情報：
-{combined_all_text}
+        # メインプロンプトを外部ファイルから読み込む
+    
+        blog_prompt_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'blog_main_prompt.txt')
+        try:
+            with open(blog_prompt_path, 'r', encoding='utf-8') as f:
+                blog_prompt_template = f.read()
+        except Exception as e:
+            logger.error(f"メインプロンプトファイルの読み込みエラー: {e}")
+            blog_prompt_template = ""  # 空文字でフォールバック
 
-## ✨ 3ステップで記事作成
+        # プロンプトに入力情報を埋め込む
+        blog_prompt = blog_prompt_template.replace('{combined_all_text}', combined_all_text)
 
-### STEP 1: メインテーマを決める
-入力情報から一番重要なテーマを特定し、読者が知りたがる内容に焦点を当てる
+        # --- Web検索の自動判定・引用元リンク付与 ---
+        # 1. メインテーマから検索クエリを抽出
+        search_queries = extract_search_queries_from_content(combined_all_text)
+        logger.info(f"Web検索自動判定: {search_queries}")
 
-### STEP 2: 読者の気持ちになる
-🍽️ **グルメ記事なら**：住所・価格・おすすめメニュー・営業時間・混雑状況
-🚶 **散策記事なら**：ルート・見どころ・所要時間・注意点・服装
-🛍️ **ショッピング記事なら**：店舗情報・商品詳細・価格・購入方法
-
-### STEP 3: 情報を整理して書く
-
-## 📝 記事の構成
-
-**【導入】（100-150文字）**
-- 記事の内容を端的に紹介
-- 読者の関心を引く工夫
-- この記事を読むメリットを明示
-
-**【メイン情報】（800-1200文字）**
-■ 基本情報（該当する場合）
-・名称・住所・営業時間・アクセス方法
-・価格情報（税込み表示）
-・注意点（混雑時間・定休日など）
-
-■ 特徴・おすすめポイント
-・他との違いや特徴を明確に
-・具体的な体験談を交える
-・客観的な評価（良い点と改善点）
-
-■ 読者への実用的なアドバイス
-・行く前に知っておくべきこと
-・最適な時間帯や条件
-・持参すべきものや服装
-
-**【まとめ】（100-150文字）**
-- 要点を整理
-- 読者への提案や次のアクション
-- どんな人におすすめかを明記
-
-## 🌟 文章ルール
-
-### 読みやすさアップ術
-- **短文で書く**：一文は50文字以内を目安
-- **段落分け**：3-5文で段落を区切る
-- **具体的な数字**：「安い」→「500円」「近い」→「徒歩5分」
-
-### 親しみやすさアップ術
-- **体験談を混ぜる**：「実際に○○してみると〜」
-- **読者への語りかけ**：「○○好きの方には特におすすめです」
-- **感情表現は控えめに**：大げさな表現を避ける
-
-## 📸 写真との連携術
-- **写真の説明を具体的に**：料理名、見た目の特徴、価格を明記
-- **写真で伝わらない情報を補完**：味、食感、量、温度など
-- **写真の順序と文章を対応**：読者が混乱しないよう配慮
-
-## ❌ 避けるべき表現
-- 話し言葉（「いやー」「なんか」「まぁ」「とっとと」「ありゃりゃ」「まじで」）
-- 曖昧な表現（「なんとなく」「そんな感じ」）
-- 無関係な話題への脱線（天気の話、個人的な買い物、関係ない思い出話）
-- 個人的すぎる情報（投資額、購入履歴、メルカリの話）
-- 根拠のない断定（「〜と思う」「〜な気がする」の乱用）
-
-## 🎉 記事が読者に与える価値
-- **新しい発見**：知らなかった場所やお店の情報
-- **時間の節約**：事前に詳しい情報で効率的な行動
-- **安心感**：実際の体験談による不安解消
-- **行動のきっかけ**：読者が実際に行動したくなる情報
-
-フォーマット：
-タイトル
-本文内容...
-"""
-        
-        # Web検索で関連情報を追加（検索サービスが有効な場合）
-        enhanced_content = None
-        if search_service and search_service.enabled:
+        # 2. AIにWeb検索の必要性を判定させる
+        should_search = False
+        if search_service and search_queries:
             try:
-                # メインテーマから検索クエリを抽出
-                search_queries = extract_search_queries_from_content(combined_all_text)
-                logger.info(f"Web検索実行: {search_queries}")
-                
-                # 基本記事を生成
-                basic_content = gemini_service.generate_content(blog_prompt)
-                
-                # Web検索で関連情報を追加
-                if basic_content and search_queries:
-                    enhanced_content = search_service.enhance_content_with_search(
-                        basic_content, search_queries
-                    )
-                    logger.info(f"Web検索強化完了: {len(enhanced_content)}文字")
-                else:
-                    enhanced_content = basic_content
-                    
+                search_judge_prompt_template = (
+                    "以下はブログ記事の下書き情報です。\n"
+                    "この内容を読者にとって十分有益な記事にするには、Web検索による追加情報（例：公式情報、最新データ、第三者の評価など）が必要ですか？\n"
+                    "\n【記事下書き】\n"
+                    "{combined_all_text}\n"
+                    "---\n"
+                    "必要な場合はYes、不要ならNoとだけ1行で答えてください。"
+                )
+                search_judge_prompt = search_judge_prompt_template.replace('{combined_all_text}', combined_all_text)
+                judge_result = gemini_service.generate_content(search_judge_prompt)
+                logger.info(f"Web検索要否AI判定: {judge_result}")
+                if judge_result and judge_result.strip().lower().startswith('y'):
+                    should_search = True
+            except Exception as e:
+                logger.error(f"Web検索要否判定エラー: {e}")
+
+        basic_content = gemini_service.generate_content(blog_prompt)
+        enhanced_content = basic_content
+        source_links = []
+        if should_search:
+            try:
+                enhanced_content, links = search_service.enhance_content_with_search_and_links(
+                    basic_content, search_queries
+                )
+                logger.info(f"Web検索強化・引用元取得: {links}")
+                source_links = links
             except Exception as e:
                 logger.error(f"Web検索エラー: {e}")
-        else:
-            enhanced_content = gemini_service.generate_content(blog_prompt)
-        
+
+        # 3. 記事末尾に引用元リンクを必ず追加
+        if source_links:
+            links_section = '\n\n---\n\n参考・引用元:\n' + '\n'.join(f'- {url}' for url in source_links)
+            enhanced_content = f"{enhanced_content}{links_section}"
+
         integrated_content = enhanced_content
 
-        # タイトルと本文を分離
-        lines = integrated_content.split('\n', 1)
-        if len(lines) > 1:
-            title = lines[0].strip()
-            content = lines[1].strip()
+        # タイトル抽出: 本文中の一番印象的な見出し（Markdown見出し or 太字）を優先
+        import re
+        title = None
+        content = integrated_content
+
+        # 1. Markdown見出し（##, ###, #）を探す
+        headings = re.findall(r'^(#+)\s*(.+)', integrated_content, re.MULTILINE)
+        if headings:
+            # 最初の見出しのテキストをタイトルに
+            title = headings[0][1].strip()
         else:
-            title = lines[0].strip()
-            content = integrated_content
-        
+            # 2. 太字（**タイトル**）を探す
+            bolds = re.findall(r'\*\*(.+?)\*\*', integrated_content)
+            if bolds:
+                title = bolds[0].strip()
+        # 3. フォールバック: 先頭行
+        if not title:
+            first_line = integrated_content.split('\n', 1)[0].strip()
+            # 変な文字や記号を除去
+            title = re.sub(r'[\s\u200b\u3000\uFFFD]+', '', first_line)
+
+        # 本文はタイトル行を除いた残り
+        if title and title in integrated_content:
+            # タイトル行を除去
+            content = integrated_content.replace(title, '', 1).lstrip('\n').strip()
+        else:
+            content = integrated_content.strip()
+
+        # 変な文字（ゼロ幅スペース、全角空白、制御文字など）を除去
+        title = re.sub(r'[\u200b\u3000\uFFFD]+', '', title)
+        content = re.sub(r'[\u200b\u3000\uFFFD]+', '', content)
+
         logger.info(f"抽出されたタイトル: {title}")
         return title, content
-        
+
     except Exception as e:
         logger.error(f"統合コンテンツ作成エラー: {e}")
         import traceback
@@ -551,41 +521,52 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
         return None, None
 
 def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> str:
-    """ブログ記事にImgur URLをルールベースで挿入"""
+    '''ブログ記事にImgur URLをルールベースで挿入'''
+    import re
     try:
         if not image_messages:
             return content
-        
+
         logger.info(f"画像URL挿入開始: {len(image_messages)}枚の画像")
-        
-        # 画像URLを収集
-        imgur_urls = []
+
+        # 画像URLと説明文の対応リストを作成
+        imgur_pairs = []  # (desc, url)
+        unmatched_urls = []
         for img_msg in image_messages:
             imgur_url = img_msg.get('imgur_url')
+            desc = img_msg.get('content')
             if imgur_url:
-                imgur_urls.append(imgur_url)
-                logger.info(f"挿入予定URL: {imgur_url}")
-        
-        if not imgur_urls:
-            logger.warning("挿入可能なImgur URLがありません")
-            return content
-        
-        # 記事の最後に画像を追加
-        image_html_tags = []
-        for i, url in enumerate(imgur_urls, 1):
+                if desc and desc.strip():
+                    imgur_pairs.append((desc.strip(), imgur_url))
+                else:
+                    unmatched_urls.append(imgur_url)
+
+        # 本文中の画像説明文の直後に画像タグを挿入
+        new_content = content
+        used_urls = set()
+        for i, (desc, url) in enumerate(imgur_pairs, 1):
             html_tag = f'<p><img src="{url}" alt="画像{i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
-            image_html_tags.append(html_tag)
-        
-        # 記事本文 + 改行 + 画像セクション + 画像HTML
-        final_content = f"""{content}
+            # 画像説明文の直後に挿入（最初の一致のみ）
+            pattern = re.escape(desc)
+            # すでに挿入済みならスキップ
+            if url in used_urls:
+                continue
+            # 画像説明文の直後に挿入
+            new_content, count = re.subn(pattern, desc + '\n' + html_tag, new_content, count=1)
+            if count > 0:
+                used_urls.add(url)
 
-## 📸 投稿画像
+        # 説明文に紐づかない画像は末尾にまとめて挿入
+        if unmatched_urls:
+            image_html_tags = []
+            for i, url in enumerate(unmatched_urls, 1):
+                html_tag = f'<p><img src="{url}" alt="画像(末尾){i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
+                image_html_tags.append(html_tag)
+            new_content += "\n\n" + "\n".join(image_html_tags)
 
-{chr(10).join(image_html_tags)}"""
-        
-        logger.info(f"画像URL挿入完了: {len(imgur_urls)}枚挿入, 最終コンテンツサイズ: {len(final_content)}文字")
-        return final_content
-        
+        logger.info(f"画像URL挿入完了: {len(image_messages)}枚挿入, 最終コンテンツサイズ: {len(new_content)}文字")
+        return new_content
+
     except Exception as e:
         logger.error(f"画像URL挿入エラー: {e}")
         import traceback
@@ -593,7 +574,7 @@ def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> st
         return content  # エラー時は元のコンテンツを返す
 
 def extract_fallback_queries(content: str) -> List[str]:
-    """Gemini等が失敗した場合の簡易キーワード抽出フォールバック"""
+    '''Gemini等が失敗した場合の簡易キーワード抽出フォールバック'''
     import re
     # ひらがな・カタカナ・漢字・英数字の単語を抽出
     words = re.findall(r'[\w\u3040-\u30ff\u4e00-\u9fff]{2,}', content)
@@ -603,7 +584,7 @@ def extract_fallback_queries(content: str) -> List[str]:
     return common
 
 def extract_search_queries_from_content(content: str) -> List[str]:
-    """コンテンツからWeb検索用のクエリをAIで動的に抽出"""
+    '''コンテンツからWeb検索用のクエリをAIで動的に抽出'''
     try:
         # RAGでジャンル特化プロンプトを取得
         rag_prompt = None
@@ -620,21 +601,20 @@ def extract_search_queries_from_content(content: str) -> List[str]:
             logger.error(f"RAGプロンプト抽出エラー: {e}")
 
         # Geminiで検索クエリ抽出
-        extraction_prompt = f"""{rag_prompt if rag_prompt else ''}
-        以下のコンテンツを分析して、読者にとって有益な追加情報を得るためのWeb検索クエリを3つまで抽出してください。
-
-        コンテンツ:
-        {content}
-
-        出力形式:
-        検索クエリ1
-        検索クエリ2
-        検索クエリ3
-
-        ※各クエリは30文字以内で、検索しやすい形にしてください
-        ※関連性の高い順に並べてください
-        ※クエリが3つ未満の場合は、その分だけ出力してください
-        """
+        extraction_prompt_template = (
+            "{rag_prompt}\n"
+            "以下のコンテンツを分析して、読者にとって有益な追加情報を得るためのWeb検索クエリを3つまで抽出してください。\n"
+            "\nコンテンツ:\n"
+            "{content}\n"
+            "\n出力形式:\n"
+            "検索クエリ1\n"
+            "検索クエリ2\n"
+            "検索クエリ3\n"
+            "\n※各クエリは30文字以内で、検索しやすい形にしてください\n"
+            "※関連性の高い順に並べてください\n"
+            "※クエリが3つ未満の場合は、その分だけ出力してください"
+        )
+        extraction_prompt = extraction_prompt_template.replace('{rag_prompt}', rag_prompt if rag_prompt else '').replace('{content}', content)
         queries = []
         try:
             logger.info("Geminiによる検索クエリ抽出を開始")
