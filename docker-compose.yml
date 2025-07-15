@@ -1,0 +1,13 @@
+services:
+  line-gemini-hatena:
+    build: .
+    container_name: line-gemini-hatena-app
+    ports:
+      - "8000:8000"
+    environment:
+      # 環境変数は .env ファイルまたは外部で設定
+      - FLASK_ENV=production
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env.production
+    restart: unless-stopped
