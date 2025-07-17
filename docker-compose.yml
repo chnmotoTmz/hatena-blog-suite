@@ -10,4 +10,5 @@ services:
       - LOG_LEVEL=INFO
     env_file:
       - .env.production
+      - .env.blog1
     restart: unless-stopped

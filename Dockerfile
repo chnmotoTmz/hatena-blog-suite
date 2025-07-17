@@ -16,13 +16,19 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# アプリケーションコードをコピー
+
+# アプリケーションコードとデータディレクトリをコピー
 COPY src/ ./src/
+COPY data/ ./data/
 COPY *.py ./
 COPY *.sh ./
 
 # ログディレクトリを作成
 RUN mkdir -p /app/logs
+
+# エントリポイントスクリプトを追加
+COPY entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 # 非rootユーザーを作成
 RUN useradd --create-home --shell /bin/bash app \
@@ -36,5 +42,5 @@ EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
-# アプリケーションを起動
-CMD ["python", "main.py"]
+# アプリケーションを起動（entrypoint.shで再学習→本番起動）
+ENTRYPOINT ["./entrypoint.sh"]

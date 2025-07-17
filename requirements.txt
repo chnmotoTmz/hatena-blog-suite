@@ -29,7 +29,12 @@ pillow==10.1.0
 # selenium==4.15.2
 # webdriver-manager==4.0.1
 # lxml==4.9.3
-# markdown==3.5.1
+# RAG用
+# RAG用
+janome
+scikit-learn
+pandas
+# ...既存の他の依存もここに記載...
 
 # バッチ処理とOAuth用の追加依存関係
 apscheduler==3.10.4

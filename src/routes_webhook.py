@@ -60,39 +60,41 @@ except ImportError:
     search_service = None
     logger.warning("検索サービスが利用できません")
 
+
 @webhook_bp.route('/line', methods=['POST'])
 def line_webhook():
     """LINE Webhook エンドポイント"""
-    
     # デバッグ情報をログに出力
     logger.info(f"Received webhook request. Headers: {dict(request.headers)}")
-    
+
     # 署名検証
     signature = request.headers.get('X-Line-Signature')
     body = request.get_data(as_text=True)
-    
+
     logger.info(f"Signature: {signature}")
     logger.info(f"Body length: {len(body) if body else 'None'}")
     logger.info(f"Body content: {body[:200] if body else 'None'}")
-    
+
     # 署名が存在しない場合の処理
     if not signature:
         logger.error('X-Line-Signature header is missing')
         return jsonify({'error': 'X-Line-Signature header is missing'}), 400
-    
+
     # リクエストボディが空の場合の処理
     if not body:
         logger.error('Request body is empty')
         return jsonify({'error': 'Request body is empty'}), 400
-    
+
     try:
         # 一時的に署名検証をスキップ（デバッグ用）
         logger.warning("DEBUGGING: Skipping signature validation")
-        
+
         # 手動でイベントを処理
         import json
         webhook_body = json.loads(body)
-        
+
+
+
         # eventsが存在し、空でない場合のみ処理
         if 'events' in webhook_body and webhook_body['events']:
             for event_data in webhook_body['events']:
@@ -102,12 +104,12 @@ def line_webhook():
                     process_message_event_with_batch(event_data)
         else:
             logger.info("No events to process (webhook verification or empty events)")
-        
+
         logger.info('Webhook handled successfully')
     except Exception as e:
         logger.error(f'Webhook handling error: {str(e)}')
         return jsonify({'error': 'Internal server error'}), 500
-    
+
     return 'OK'
 
 def process_message_event_with_batch(event_data):
@@ -423,13 +425,17 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
 
         # メインプロンプトを外部ファイルから読み込む
     
-        blog_prompt_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'blog_main_prompt.txt')
-        try:
-            with open(blog_prompt_path, 'r', encoding='utf-8') as f:
-                blog_prompt_template = f.read()
-        except Exception as e:
-            logger.error(f"メインプロンプトファイルの読み込みエラー: {e}")
+        blog_prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'blog_main_prompt.txt'))
+        if not os.path.exists(blog_prompt_path):
+            logger.error(f"メインプロンプトファイルが見つかりません: {blog_prompt_path}")
             blog_prompt_template = ""  # 空文字でフォールバック
+        else:
+            try:
+                with open(blog_prompt_path, 'r', encoding='utf-8') as f:
+                    blog_prompt_template = f.read()
+            except Exception as e:
+                logger.error(f"メインプロンプトファイルの読み込みエラー: {e}")
+                blog_prompt_template = ""  # 空文字でフォールバック
 
         # プロンプトに入力情報を埋め込む
         blog_prompt = blog_prompt_template.replace('{combined_all_text}', combined_all_text)
@@ -464,9 +470,22 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
         source_links = []
         if should_search:
             try:
-                enhanced_content, links = search_service.enhance_content_with_search_and_links(
-                    basic_content, search_queries
-                )
+                # メソッド名を確認し、なければ仮でsearch_and_enhance_contentに変更
+                if hasattr(search_service, 'enhance_content_with_search_and_links'):
+                    enhanced_content, links = search_service.enhance_content_with_search_and_links(
+                        basic_content, search_queries
+                    )
+                elif hasattr(search_service, 'search_and_enhance_content'):
+                    enhanced_content, links = search_service.search_and_enhance_content(
+                        basic_content, search_queries
+                    )
+                elif hasattr(search_service, 'enhance_content'):
+                    enhanced_content, links = search_service.enhance_content(
+                        basic_content, search_queries
+                    )
+                else:
+                    logger.error("SearchServiceにWeb検索強化用のメソッドが見つかりません")
+                    enhanced_content, links = basic_content, []
                 logger.info(f"Web検索強化・引用元取得: {links}")
                 source_links = links
             except Exception as e:
@@ -479,38 +498,69 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
 
         integrated_content = enhanced_content
 
-        # タイトル抽出: 本文中の一番印象的な見出し（Markdown見出し or 太字）を優先
+        # タイトル抽出: 本文中の一番印象的な見出し（Markdown見出し or 太字 or タイトル:）を優先
         import re
         title = None
         content = integrated_content
 
-        # 1. Markdown見出し（##, ###, #）を探す
-        headings = re.findall(r'^(#+)\s*(.+)', integrated_content, re.MULTILINE)
-        if headings:
-            # 最初の見出しのテキストをタイトルに
-            title = headings[0][1].strip()
+        # 1. <p>タイトル: ...</p> 形式や タイトル: ... で始まる場合
+        m = re.match(r'<p>\s*タイトル[:：]\s*(.+?)</p>', integrated_content)
+        if m:
+            title = m.group(1).strip()
+            content = re.sub(r'<p>\s*タイトル[:：].+?</p>\s*', '', integrated_content, count=1).lstrip('\n').strip()
         else:
-            # 2. 太字（**タイトル**）を探す
-            bolds = re.findall(r'\*\*(.+?)\*\*', integrated_content)
-            if bolds:
-                title = bolds[0].strip()
-        # 3. フォールバック: 先頭行
-        if not title:
-            first_line = integrated_content.split('\n', 1)[0].strip()
-            # 変な文字や記号を除去
-            title = re.sub(r'[\s\u200b\u3000\uFFFD]+', '', first_line)
-
-        # 本文はタイトル行を除いた残り
-        if title and title in integrated_content:
-            # タイトル行を除去
-            content = integrated_content.replace(title, '', 1).lstrip('\n').strip()
-        else:
-            content = integrated_content.strip()
+            m2 = re.match(r'タイトル[:：]\s*(.+)', integrated_content)
+            if m2:
+                title = m2.group(1).strip()
+                content = re.sub(r'タイトル[:：].+\n?', '', integrated_content, count=1).lstrip('\n').strip()
+            else:
+                # 2. Markdown見出し（##, ###, #）を探す
+                headings = re.findall(r'^(#+)\s*(.+)', integrated_content, re.MULTILINE)
+                if headings:
+                    title = headings[0][1].strip()
+                    content = integrated_content.replace(headings[0][0] + ' ' + title, '', 1).lstrip('\n').strip()
+                else:
+                    # 3. 太字（**タイトル**）を探す
+                    bolds = re.findall(r'\*\*(.+?)\*\*', integrated_content)
+                    if bolds:
+                        title = bolds[0].strip()
+                        content = integrated_content.replace('**' + title + '**', '', 1).lstrip('\n').strip()
+                    else:
+                        # 4. フォールバック: 先頭行
+                        first_line = integrated_content.split('\n', 1)[0].strip()
+                        title = re.sub(r'[\s\u200b\u3000\uFFFD]+', '', first_line)
+                        content = integrated_content[len(first_line):].lstrip('\n').strip()
 
         # 変な文字（ゼロ幅スペース、全角空白、制御文字など）を除去
         title = re.sub(r'[\u200b\u3000\uFFFD]+', '', title)
         content = re.sub(r'[\u200b\u3000\uFFFD]+', '', content)
 
+        logger.info(f"抽出されたタイトル: {title}")
+        # --- ここから画像のHTMLタグを末尾に追加 ---
+        if image_messages:
+            image_html_tags = []
+            def is_valid_imgur_url(url):
+                import re
+                if not url:
+                    return False
+                if not url.startswith('https://'):
+                    return False
+                if 'imgur.com' not in url:
+                    return False
+                if not re.search(r'\.(jpg|jpeg|png|gif)$', url, re.IGNORECASE):
+                    return False
+                return True
+
+            for i, img_msg in enumerate(image_messages, 1):
+                imgur_url = img_msg.get('imgur_url')
+                if is_valid_imgur_url(imgur_url):
+                    html_tag = f'<p><img src="{imgur_url}" alt="画像{i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
+                    image_html_tags.append(html_tag)
+                else:
+                    logger.warning(f"画像URLが無効または非推奨: {imgur_url}")
+            if image_html_tags:
+                content += "\n\n" + "\n".join(image_html_tags)
+        # --- ここまで画像末尾追加 ---
         logger.info(f"抽出されたタイトル: {title}")
         return title, content
 
@@ -529,8 +579,14 @@ def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> st
 
         logger.info(f"画像URL挿入開始: {len(image_messages)}枚の画像")
 
-        # 画像URLと説明文の対応リストを作成
-        imgur_pairs = []  # (desc, url)
+        # 画像URLを収集し、本文末尾にまとめて埋め込む
+        # 画像説明文の直後に画像タグを挿入。なければ末尾にまとめて追加。
+        import re
+        new_content = content
+        used_urls = set()
+        image_html_tags = []
+        # 画像説明文とURLのペアを作成
+        imgur_pairs = []
         unmatched_urls = []
         for img_msg in image_messages:
             imgur_url = img_msg.get('imgur_url')
@@ -540,25 +596,20 @@ def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> st
                     imgur_pairs.append((desc.strip(), imgur_url))
                 else:
                     unmatched_urls.append(imgur_url)
+                logger.info(f"挿入予定URL: {imgur_url}")
 
-        # 本文中の画像説明文の直後に画像タグを挿入
-        new_content = content
-        used_urls = set()
+        # 本文中の画像説明文の直後に画像タグを挿入（最初の一致のみ）
         for i, (desc, url) in enumerate(imgur_pairs, 1):
             html_tag = f'<p><img src="{url}" alt="画像{i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
-            # 画像説明文の直後に挿入（最初の一致のみ）
             pattern = re.escape(desc)
-            # すでに挿入済みならスキップ
             if url in used_urls:
                 continue
-            # 画像説明文の直後に挿入
             new_content, count = re.subn(pattern, desc + '\n' + html_tag, new_content, count=1)
             if count > 0:
                 used_urls.add(url)
 
         # 説明文に紐づかない画像は末尾にまとめて挿入
         if unmatched_urls:
-            image_html_tags = []
             for i, url in enumerate(unmatched_urls, 1):
                 html_tag = f'<p><img src="{url}" alt="画像(末尾){i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
                 image_html_tags.append(html_tag)
@@ -591,7 +642,7 @@ def extract_search_queries_from_content(content: str) -> List[str]:
         try:
             import sys
             sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-            from rag import predict_with_model
+            from src.rag import predict_with_model
             query_text = content[:100]
             rag_results = predict_with_model(query_text, 'genre_prompts', top_n=1)
             if rag_results and len(rag_results) > 0:
@@ -624,6 +675,8 @@ def extract_search_queries_from_content(content: str) -> List[str]:
                 import re
                 for line in lines:
                     line = line.strip()
+                    # HTMLタグ除去
+                    line = re.sub(r'<.*?>', '', line)
                     clean_line = re.sub(r'^[\d\.\-\*\+]?\s*', '', line)
                     clean_line = re.sub(r'^[「『]|[」』]$', '', clean_line)
                     if clean_line and len(clean_line) > 3 and len(clean_line) <= 50:

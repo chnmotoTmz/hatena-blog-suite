@@ -1,4 +1,4 @@
-from flask import Flask, request, Response,render_template,flash,redirect,url_for
+from flask import Flask, request, Response, render_template, flash, redirect, url_for, jsonify
 import os
 import pickle
 from janome.tokenizer import Tokenizer
@@ -9,11 +9,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
 import re
-import jsonify
-from flask import Flask, request, Response, render_template
+## 重複・不要なインポートを削除
 import os
 import pickle
-import pandas as pd
+## ...existing code...
 from werkzeug.utils import secure_filename
 
 
@@ -330,5 +329,11 @@ def upload_file():
         return redirect(url_for('upload_form'))
 
 
+application = app  # WSGIサーバー用（Gunicorn, uWSGI, mod_wsgi など）
+
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    import os
+    host = os.getenv('HOST', '0.0.0.0')
+    port = int(os.getenv('PORT', 8000))
+    debug = os.getenv('FLASK_ENV', 'production') == 'development'
+    app.run(host=host, port=port, debug=debug)

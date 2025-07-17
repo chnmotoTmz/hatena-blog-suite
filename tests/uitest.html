@@ -1,0 +1,62 @@
+<div style="border:1px solid #ccc;padding:20px;width:320px;margin:40px auto;text-align:center;">
+  <h3>投稿先ブログを選択</h3>
+  <button id="blog1" class="blog-btn">Blog1</button>
+  <button id="blog2" class="blog-btn">Blog2</button>
+  <button id="blog3" class="blog-btn">Blog3</button>
+  <button id="multi">複数選択モード</button>
+  <br><br>
+  <button id="submit" style="width:90%;padding:10px;font-weight:bold;background:#eee;border:2px solid #888;border-radius:8px;box-shadow:inset 2px 2px 6px #ccc;">
+    本投稿
+  </button>
+  <div id="status" style="margin-top:20px;color:green;"></div>
+</div>
+<script>
+  let multiMode = false;
+  let selected = [];
+
+  function updateButtonStyle(btn, isSelected) {
+    btn.style.background = isSelected ? '#cce' : '';
+    btn.style.fontWeight = isSelected ? 'bold' : '';
+    btn.style.border = isSelected ? '2px solid #339' : '2px solid #888';
+  }
+
+  document.getElementById('multi').onclick = function() {
+    multiMode = !multiMode;
+    selected = [];
+    document.querySelectorAll('.blog-btn').forEach(btn => {
+      updateButtonStyle(btn, false);
+    });
+    this.textContent = multiMode ? '単一選択モード' : '複数選択モード';
+  };
+
+  document.querySelectorAll('.blog-btn').forEach(btn => {
+    btn.onclick = function() {
+      const blog = this.textContent;
+      if (multiMode) {
+        if (selected.includes(blog)) {
+          selected = selected.filter(b => b !== blog);
+          updateButtonStyle(this, false);
+        } else {
+          selected.push(blog);
+          updateButtonStyle(this, true);
+        }
+      } else {
+        selected = [blog];
+        document.querySelectorAll('.blog-btn').forEach(b => updateButtonStyle(b, b === this));
+      }
+    };
+  });
+
+  document.getElementById('submit').onclick = function() {
+    if (selected.length === 0) {
+      this.style.background = '#fdd';
+      document.getElementById('status').textContent = '投稿先を選択してください';
+      return;
+    }
+    this.style.background = '#cfc';
+    document.getElementById('status').textContent = selected.join(', ') + ' に投稿しました';
+    setTimeout(() => {
+      this.style.background = '#eee';
+    }, 1200);
+  };
+</script>

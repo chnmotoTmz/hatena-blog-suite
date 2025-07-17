@@ -1,0 +1,12 @@
+services:
+  line-gemini-hatena-blog3:
+    build: .
+    container_name: line-gemini-hatena-blog3-app
+    ports:
+      - "8002:8000"
+    environment:
+      - FLASK_ENV=production
+      - LOG_LEVEL=INFO
+    env_file:
+      - .env.blog3
+    restart: unless-stopped
