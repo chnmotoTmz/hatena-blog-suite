@@ -21,7 +21,8 @@ class Config:
     
     # Gemini AI設定
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
-    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-1.5-flash')  # デフォルト値設定
+    GEMINI_MODEL = os.getenv('GEMINI_MODEL', 'gemini-2.5-flash-lite')
+    
     
     # Imgur設定
     IMGUR_CLIENT_ID = os.getenv('IMGUR_CLIENT_ID')

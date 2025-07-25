@@ -330,25 +330,35 @@ def process_user_batch(user_id: str):
             if integrated_content and title:
                 # 【画像URL挿入】投稿直前にImgur URLをルールベースで挿入
                 final_content = insert_imgur_urls_to_content(integrated_content, image_messages)
-                
+
+                # 品質チェックエージェントを挟む
+                quality_result = check_article_quality(final_content)
+                logger.info(f"記事品質チェック: {quality_result}")
+
+                # 最終出力エージェント（例：品質コメントを記事末尾に追加）
+                final_output = final_content
+                if quality_result['readability']:
+                    final_output += f"\n\n<!-- 読みやすさ評価: {quality_result['readability']} -->"
+                if quality_result['reference']:
+                    final_output += f"\n\n<!-- 参考情報評価: {quality_result['reference']} -->"
+
                 # はてなブログに投稿
                 article_url = hatena_service.post_article(
                     title=title,
-                    content=final_content  # 画像URL挿入済みコンテンツ
+                    content=final_output  # 品質チェック済みコンテンツ
                 )
-                
                 if article_url:
                     # ユーザーに通知
                     content_summary = f"テキスト{len(text_messages)}件、画像{len(image_messages)}件、動画{len(video_messages)}件"
                     line_service.send_message(
                         user_id,
-                        f"📝 統合記事を投稿しました！\\n\\n💫 {content_summary}を組み合わせました\\n🔗 {article_url}"
+                        f"📝 統合記事を投稿しました！\n\n💫 {content_summary}を組み合わせました\n🔗 {article_url}"
                     )
                     
                     # 記事情報をデータベースに保存
                     article = Article(
                         title=title,
-                        content=final_content,
+                        content=final_output,
                         hatena_url=article_url,
                         published=True,
                         status='published'
@@ -403,6 +413,37 @@ def process_user_batch(user_id: str):
         except:
             pass
 
+def check_article_quality(article_text: str) -> Dict:
+    """記事の品質チェック（読みやすさ・参考情報）"""
+    try:
+        # 読みやすさ判定プロンプト
+        readability_prompt = (
+            "以下のブログ記事を読みやすさの観点で評価してください。\n"
+            "- 構成や段落、見出しは適切か\n"
+            "- 冗長な部分や分かりにくい表現はないか\n"
+            "- 文章の流れや語尾は自然か\n"
+            "\n記事本文:\n" + article_text + "\n"
+            "\n評価結果を100文字以内で要約し、必要なら修正案を提案してください。"
+        )
+        readability_result = gemini_service.generate_content(readability_prompt)
+
+        # 参考情報判定プロンプト
+        reference_prompt = (
+            "以下のブログ記事に、読者のためになる参考情報（公式情報、第三者の評価、関連リンク等）が十分に含まれていますか？\n"
+            "不足している場合は、追加すべき情報やリンク例を提案してください。\n"
+            "\n記事本文:\n" + article_text + "\n"
+            "\n評価結果を100文字以内で要約し、必要なら追加案を提案してください。"
+        )
+        reference_result = gemini_service.generate_content(reference_prompt)
+
+        return {
+            'readability': readability_result.strip() if readability_result else '',
+            'reference': reference_result.strip() if reference_result else ''
+        }
+    except Exception as e:
+        logger.error(f"記事品質チェックエラー: {e}")
+        return {'readability': 'チェック失敗', 'reference': 'チェック失敗'}
+
 def create_integrated_content_fixed(text_messages: List[Dict], image_messages: List[Dict], video_messages: List[Dict]) -> tuple:
     """統合コンテンツを作成（タイトルと本文を分けて返す）"""
 
@@ -423,9 +464,13 @@ def create_integrated_content_fixed(text_messages: List[Dict], image_messages: L
 
         combined_all_text = '\n'.join(all_texts)
 
-        # メインプロンプトを外部ファイルから読み込む
-    
-        blog_prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'blog_main_prompt.txt'))
+        # メインプロンプトを外部ファイルから読み込む（ブログごとに切り替え可能）
+        blog_prompt_env = os.getenv('BLOG_PROMPT_FILE')
+        if blog_prompt_env:
+            blog_prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', blog_prompt_env))
+        else:
+            blog_prompt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data', 'blog_main_prompt.txt'))
+
         if not os.path.exists(blog_prompt_path):
             logger.error(f"メインプロンプトファイルが見つかりません: {blog_prompt_path}")
             blog_prompt_template = ""  # 空文字でフォールバック
@@ -579,43 +624,20 @@ def insert_imgur_urls_to_content(content: str, image_messages: List[Dict]) -> st
 
         logger.info(f"画像URL挿入開始: {len(image_messages)}枚の画像")
 
-        # 画像URLを収集し、本文末尾にまとめて埋め込む
-        # 画像説明文の直後に画像タグを挿入。なければ末尾にまとめて追加。
-        import re
+        # すべての画像を本文末尾に順番に挿入
         new_content = content
-        used_urls = set()
         image_html_tags = []
-        # 画像説明文とURLのペアを作成
-        imgur_pairs = []
-        unmatched_urls = []
-        for img_msg in image_messages:
+        for i, img_msg in enumerate(image_messages, 1):
             imgur_url = img_msg.get('imgur_url')
-            desc = img_msg.get('content')
             if imgur_url:
-                if desc and desc.strip():
-                    imgur_pairs.append((desc.strip(), imgur_url))
-                else:
-                    unmatched_urls.append(imgur_url)
+                html_tag = f'<p><img src="{imgur_url}" alt="画像{i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
+                image_html_tags.append(html_tag)
                 logger.info(f"挿入予定URL: {imgur_url}")
 
-        # 本文中の画像説明文の直後に画像タグを挿入（最初の一致のみ）
-        for i, (desc, url) in enumerate(imgur_pairs, 1):
-            html_tag = f'<p><img src="{url}" alt="画像{i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
-            pattern = re.escape(desc)
-            if url in used_urls:
-                continue
-            new_content, count = re.subn(pattern, desc + '\n' + html_tag, new_content, count=1)
-            if count > 0:
-                used_urls.add(url)
-
-        # 説明文に紐づかない画像は末尾にまとめて挿入
-        if unmatched_urls:
-            for i, url in enumerate(unmatched_urls, 1):
-                html_tag = f'<p><img src="{url}" alt="画像(末尾){i}" style="max-width: 80%; height: auto; display: block; margin: 20px auto; border: 1px solid #ddd; border-radius: 8px;"></p>'
-                image_html_tags.append(html_tag)
+        if image_html_tags:
             new_content += "\n\n" + "\n".join(image_html_tags)
 
-        logger.info(f"画像URL挿入完了: {len(image_messages)}枚挿入, 最終コンテンツサイズ: {len(new_content)}文字")
+        logger.info(f"画像URL挿入完了: {len(image_html_tags)}枚挿入, 最終コンテンツサイズ: {len(new_content)}文字")
         return new_content
 
     except Exception as e:
